@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusableInTouchMode="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_title"
+            android:textColor="#333447"
+            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+            />
+
+    </android.support.v7.widget.Toolbar>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:background="#979797"
+    />
+    <ScrollView
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/rounded_edittextgrey"
+                android:padding="15dp"
+                android:layout_marginTop="20dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+
+
+                <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:paddingRight="30dp"
+                android:fontFamily="avenir-Roman"
+                android:inputType="textPassword"
+                    android:padding="15dp"
+                    android:background="@drawable/rounded_edittextgrey"/>
+
+
+
+            </FrameLayout>
+            <TextView
+                android:id="@+id/fgtpaswd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="FORGOT PASSWORD?"
+                android:textColor="#6b70ce"
+                android:layout_gravity="right"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:id="@+id/chk1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/text2"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Keep me signed in"
+                    android:textColor="#002148"
+                    android:layout_toRightOf="@+id/chk1"
+                    android:layout_marginTop="8dp"/>
+            </RelativeLayout>
+            <Button
+                android:id="@+id/continues"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bottom_selector_secondary"
+                android:layout_marginTop="35dp"
+                android:textColor="@android:color/white"
+                android:text="Continue"
+                android:textAllCaps="false"/>
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I'm a new Patient"
+                android:textColor="#002148"
+                android:layout_toRightOf="@+id/chk1"
+                android:layout_marginTop="35dp"/>
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign Up for a new MW3DK account to book an appointment right now"
+                android:layout_toRightOf="@+id/chk1"
+                android:textColor="#002148"
+                android:layout_marginTop="20dp"/>
+            <Button
+                android:id="@+id/joinnw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                android:layout_marginTop="35dp"
+                android:textColor="#002148"
+                android:text="Join now"
+                android:textAllCaps="false"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
+    <FrameLayout
+        android:id="@+id/container_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#ffffff" />
+    </android.support.v4.widget.DrawerLayout>
