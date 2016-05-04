@@ -58,34 +58,45 @@
                     android:id="@+id/streetname"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="olayastreet,"
+                    android:text="(512)88987-33434"
                     android:layout_toRightOf="@+id/chk1"
                     android:textColor="#75839b"
                     android:textSize="18dp"
-                    />
-                <TextView
-                    android:id="@+id/place"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Riyad,1432"
-                    android:layout_marginTop="8dp"
-                    android:layout_toRightOf="@+id/chk1"
-                    android:textColor="#75839b"
-                    android:textSize="18dp"
-
                     />
 
 
             </LinearLayout>
 
         </LinearLayout>
-        <Button
+        <RelativeLayout
+            android:id="@+id/reltv1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/line1"
-            android:background="@drawable/rounded_edittextgrey"
-            android:text="Next Availabe: Tuesday 12 May"
-            android:textColor="#2bbe69"
+            >
+            <TextView
+                android:id="@+id/place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Appointments(1)"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/chk1"
+                android:layout_marginLeft="20dp"
+                android:textColor="#75839b"
+                android:textSize="18dp"
+
+                />
+        </RelativeLayout>
+        <Button
+            android:id="@+id/bookagainbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reltv1"
+            android:background="@drawable/bottom_selector_secondary"
+            android:text="Book again"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
             android:layout_marginBottom="15dp"
             android:layout_marginLeft="12dp"
             android:layout_marginRight="12dp"/>

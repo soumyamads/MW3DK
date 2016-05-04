@@ -13,6 +13,8 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.mw3dk.R;
+import com.mw3dk.extras.Constants;
+import com.mw3dk.fragments.DrawerFragment;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
@@ -56,10 +58,10 @@ Intent i=new Intent(HomeActivity.this,SearchResultActivity.class);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
-//        getSupportFragmentManager().beginTransaction()
-//                .add(R.id.container_drawer, new DrawerFragment(), Constants.DRAWER_FRAGMENT)
-//                .commit();
-//        initDrawer();
+        getSupportFragmentManager().beginTransaction()
+                .add(R.id.container_drawer, new DrawerFragment(), Constants.DRAWER_FRAGMENT)
+                .commit();
+        initDrawer();
         initialise();
     }
 
@@ -94,13 +96,13 @@ Intent i=new Intent(HomeActivity.this,SearchResultActivity.class);
     @Override
     protected void onPostCreate(Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);
-//        drawerToggle.syncState();
+        drawerToggle.syncState();
     }
 
     @Override
     public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
-//        drawerToggle.onConfigurationChanged(newConfig);
+        drawerToggle.onConfigurationChanged(newConfig);
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

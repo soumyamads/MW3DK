@@ -1,5 +1,6 @@
 package com.mw3dk.activity;
 
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -23,25 +24,32 @@ import butterknife.Optional;
 /**
  * Created by snyxius on 3/5/16.
  */
-public class WellguideActivity extends AppCompatActivity implements View.OnClickListener{
+public class MedicalTeam extends AppCompatActivity implements View.OnClickListener{
     Toolbar toolbar;
     DrawerLayout drawerLayout;
     ActionBarDrawerToggle drawerToggle;
-    @Optional @InjectView(R.id.toolbar_title) TextView signintxt ;
+
+//    @Optional
+//    @InjectView(R.id.toolbar_title)
+//    TextView signintxt ;
     @Optional @InjectView(R.id.text1) TextView text1 ;
     @Optional @InjectView(R.id.text2) TextView text2 ;
 
 
-    @Optional @OnClick(R.id.bookagainbtn)
-    public void continue_click(){
 
+    @Optional @OnClick(R.id.finddr
+
+    )
+    public void continue_click(){
+Intent i=new Intent(MedicalTeam.this,MedicalTeamResultActivity.class);
+        startActivity(i);
     }
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.wellguideskinscreeng);
+        setContentView(R.layout.medicalteam);
         ButterKnife.inject(this);
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -58,7 +66,6 @@ public class WellguideActivity extends AppCompatActivity implements View.OnClick
         Typeface face= Typeface.createFromAsset(getAssets(), "fonts/AvenirNextLTPro-Regular.otf");
         text1.setTypeface(face);
         text2.setTypeface(face);
-
 
     }
     private void initDrawer() {
@@ -80,13 +87,13 @@ public class WellguideActivity extends AppCompatActivity implements View.OnClick
     @Override
     protected void onPostCreate(Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);
-//        drawerToggle.syncState();
+        drawerToggle.syncState();
     }
 
     @Override
     public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
-//        drawerToggle.onConfigurationChanged(newConfig);
+        drawerToggle.onConfigurationChanged(newConfig);
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -105,3 +112,4 @@ public class WellguideActivity extends AppCompatActivity implements View.OnClick
 
     }
 }
+

@@ -48,30 +48,55 @@
                     android:id="@+id/text1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Vision Exam"
+                    android:text="When was your last Skin screening"
                     android:layout_toRightOf="@+id/chk1"
                     android:textColor="#002148"
+                    android:textSize="18dp"
 
-                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
                     />
                 <TextView
                     android:id="@+id/text2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="You've already done this.Great job!"
+                    android:text="Let us know, and we'll remind you when your next visit is recommended!"
                     android:layout_toRightOf="@+id/chk1"
                     android:textColor="#002148"
 
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                     android:layout_marginTop="20dp"/>
-                <Button
-                    android:id="@+id/bookagainbtn"
+                <Spinner
+                    android:id="@+id/month"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/bottom_selector_secondary"
+                    android:layout_marginTop="15dp"
+/>
+                <Spinner
+                    android:id="@+id/year"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@android:color/darker_gray"/>
+                <Button
+                    android:id="@+id/save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edittextgrey"
                     android:layout_marginTop="35dp"
-                    android:textColor="@android:color/white"
-                    android:text="Book again"
+                    android:text="Save"
+                    android:textAllCaps="false"
+                    />
+                <Button
+                    android:id="@+id/dntrembr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edittext"
+                    android:layout_marginTop="35dp"
+                    android:textColor="#002148"
+                    android:text="I don't remember"
                     android:textAllCaps="false"
                     />
 

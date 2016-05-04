@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <ImageView
+        android:id="@+id/search"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/location"
+        />
+
+    <TextView
+        android:id="@+id/searchdr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find a doctor or dentist"
+        android:textColor="#002148"
+        android:layout_toRightOf="@+id/search"
+       android:layout_centerVertical="true"
+        android:textSize="20dp"
+        android:layout_marginLeft="15dp"
+
+        />
+</RelativeLayout>
+        <TextView
+            android:id="@+id/account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My account"
+            android:textColor="#002148"
+            android:layout_toRightOf="@+id/search"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+            android:textSize="19dp"
+            />
+        <RelativeLayout
+            android:id="@+id/relative_signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            >
+            <ImageView
+                android:id="@+id/signinimg"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/location"
+                />
+
+            <TextView
+                android:id="@+id/signintxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign in"
+                android:textColor="#002148"
+                android:layout_toRightOf="@+id/signinimg"
+                android:layout_centerVertical="true"
+                android:textSize="17dp"
+                android:layout_marginLeft="30dp"
+
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/relative_joinnw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            >
+            <ImageView
+                android:id="@+id/joinimg"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/location"
+                />
+
+            <TextView
+                android:id="@+id/jointxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Join now"
+                android:textColor="#002148"
+                android:layout_toRightOf="@+id/joinimg"
+                android:layout_centerVertical="true"
+                android:textSize="17dp"
+                android:layout_marginLeft="30dp"
+
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/relatv_medical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            >
+            <ImageView
+                android:id="@+id/medicltmimg"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/location"
+                />
+
+            <TextView
+                android:id="@+id/medicltxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medical team"
+                android:textColor="#002148"
+                android:layout_toRightOf="@+id/medicltmimg"
+                android:layout_centerVertical="true"
+                android:textSize="17dp"
+                android:layout_marginLeft="30dp"
+
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/relatv_welguide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            >
+            <ImageView
+                android:id="@+id/welguidimg"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/location"
+                />
+
+            <TextView
+                android:id="@+id/welgdtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Well guide"
+                android:textColor="#002148"
+                android:layout_toRightOf="@+id/welguidimg"
+                android:layout_centerVertical="true"
+                android:textSize="17dp"
+                android:layout_marginLeft="30dp"
+
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/reltvapointmnt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            >
+            <ImageView
+                android:id="@+id/pastapntimg"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/location"
+                />
+
+            <TextView
+                android:id="@+id/patapttxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Past appointments"
+                android:textColor="#002148"
+                android:layout_toRightOf="@+id/pastapntimg"
+                android:layout_centerVertical="true"
+                android:textSize="17dp"
+                android:layout_marginLeft="30dp"
+
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rltvsettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            >
+            <ImageView
+                android:id="@+id/settings"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/location"
+                />
+
+            <TextView
+                android:id="@+id/settingstxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:textColor="#002148"
+                android:layout_toRightOf="@+id/settings"
+                android:layout_centerVertical="true"
+                android:textSize="17dp"
+                android:layout_marginLeft="30dp"
+
+                />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/cntctus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact us"
+            android:textColor="#002148"
+            android:layout_toRightOf="@+id/search"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+            android:textSize="19dp"
+            />
+        <TextView
+            android:id="@+id/termsuse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terms of use"
+            android:textColor="#002148"
+            android:layout_toRightOf="@+id/search"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+            android:textSize="19dp"
+            />
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

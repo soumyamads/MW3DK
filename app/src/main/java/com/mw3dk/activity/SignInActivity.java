@@ -12,6 +12,8 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.mw3dk.R;
+import com.mw3dk.extras.Constants;
+import com.mw3dk.fragments.DrawerFragment;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
@@ -28,8 +30,10 @@ public class SignInActivity extends AppCompatActivity implements View.OnClickLis
     @Optional @InjectView(R.id.toolbar_title) TextView signintxt ;
     @Optional @InjectView(R.id.fgtpaswd) TextView fgtpswdtxt ;
     @Optional @InjectView(R.id.text2) TextView kpsgntext ;
-    @Optional @InjectView(R.id.text1) TextView text1 ;
-    @Optional @InjectView(R.id.text2) TextView text2 ;
+//    @Optional @InjectView(R.id.text1) TextView text1 ;
+    @Optional @InjectView(R.id.text4) TextView text4 ;
+    @Optional @InjectView(R.id.text3) TextView text3 ;
+
 
 
     @Optional @OnClick(R.id.continues)
@@ -47,10 +51,10 @@ public class SignInActivity extends AppCompatActivity implements View.OnClickLis
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
-//        getSupportFragmentManager().beginTransaction()
-//                .add(R.id.container_drawer, new DrawerFragment(), Constants.DRAWER_FRAGMENT)
-//                .commit();
-//        initDrawer();
+        getSupportFragmentManager().beginTransaction()
+                .add(R.id.container_drawer, new DrawerFragment(), Constants.DRAWER_FRAGMENT)
+                .commit();
+        initDrawer();
         initialise();
     }
 
@@ -59,8 +63,10 @@ public class SignInActivity extends AppCompatActivity implements View.OnClickLis
         fgtpswdtxt.setTypeface(face);
         signintxt.setTypeface(face);
         kpsgntext.setTypeface(face);
-        text1.setTypeface(face);
-        text2.setTypeface(face);
+//        text1.setTypeface(face);
+        text3.setTypeface(face);
+        text4.setTypeface(face);
+
 
 
     }
@@ -83,13 +89,13 @@ public class SignInActivity extends AppCompatActivity implements View.OnClickLis
     @Override
     protected void onPostCreate(Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);
-//        drawerToggle.syncState();
+        drawerToggle.syncState();
     }
 
     @Override
     public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
-//        drawerToggle.onConfigurationChanged(newConfig);
+        drawerToggle.onConfigurationChanged(newConfig);
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

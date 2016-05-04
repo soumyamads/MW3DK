@@ -19,6 +19,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.SearchResultActivity"/>
+        <activity android:name=".activity.MedicalTeam"/>
+        <activity android:name=".activity.SignInActivity"/>
+        <activity android:name=".activity.WellguideActivity"/>
+        <activity android:name=".activity.MedicalTeamResultActivity"/>
+        <activity android:name=".activity.BookappointmentActivity"/>
     </application>
 
 </manifest>

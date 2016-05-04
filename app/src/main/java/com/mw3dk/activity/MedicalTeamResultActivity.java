@@ -1,6 +1,5 @@
 package com.mw3dk.activity;
 
-import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
@@ -14,7 +13,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.mw3dk.R;
-import com.mw3dk.adapter.SearchResultAdapter;
+import com.mw3dk.adapter.MedicalteamAdapter;
 import com.mw3dk.extras.Constants;
 import com.mw3dk.fragments.DrawerFragment;
 import com.mw3dk.pojo.AllPojos;
@@ -31,10 +30,10 @@ import butterknife.Optional;
 /**
  * Created by snyxius on 3/5/16.
  */
-public class SearchResultActivity extends AppCompatActivity {
+public class MedicalTeamResultActivity extends AppCompatActivity {
     private RecyclerView mRecyclerView;
 Toolbar toolbar;
-    SearchResultAdapter adapter;
+    MedicalteamAdapter adapter;
     DrawerLayout drawerLayout;
     ActionBarDrawerToggle drawerToggle;
     //    ListView mylist;
@@ -52,7 +51,7 @@ Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.searchresult);
+        setContentView(R.layout.medicaltmresult);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
 
         setSupportActionBar(toolbar);
@@ -125,7 +124,7 @@ Toolbar toolbar;
         //or
         mRecyclerView.addItemDecoration(
                 new DividerItemDecoration(this, R.drawable.divider));
-        adapter = new SearchResultAdapter(this,estTypeListArray);
+        adapter = new MedicalteamAdapter(this,estTypeListArray);
         mRecyclerView.setAdapter(adapter);
 
         mRecyclerView.addOnItemTouchListener(
@@ -133,8 +132,6 @@ Toolbar toolbar;
                     @Override
                     public void onItemClick(View view, int position) {
 //
-                        Intent i=new Intent(SearchResultActivity.this,BookappointmentActivity.class);
-                        startActivity(i);
                     }
                 })
         );

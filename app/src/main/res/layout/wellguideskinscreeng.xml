@@ -19,7 +19,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Medical team"
+                android:text="Well guide"
                 android:layout_gravity="center"
                 android:id="@+id/toolbar_title"
                 android:textColor="#333447"
@@ -48,7 +48,7 @@
                     android:id="@+id/text1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Welcome!"
+                    android:text="Skin Screening"
                     android:layout_toRightOf="@+id/chk1"
                     android:textColor="#002148"
 
@@ -58,23 +58,32 @@
                     android:id="@+id/text2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Looks like you have'nt booked an appointment on MW3DK before. Get started by finding a Doctor or Dentist below."
+                    android:text="American Cancer Society recommends an annual skin screening for everyone 20 to 80 years of age"
                     android:layout_toRightOf="@+id/chk1"
                     android:textColor="#002148"
 
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                     android:layout_marginTop="20dp"/>
                 <Button
-                    android:id="@+id/finddr"
+                    android:id="@+id/bookscrn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/bottom_selector_secondary"
                     android:layout_marginTop="35dp"
                     android:textColor="@android:color/white"
-                    android:text="Find a Doctor or Dentist"
+                    android:text="Book a screening test"
                     android:textAllCaps="false"
                     />
-
+                <Button
+                    android:id="@+id/alrdydid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edittext"
+                    android:layout_marginTop="35dp"
+                    android:textColor="#002148"
+                    android:text="I already did this"
+                    android:textAllCaps="false"
+                    />
             </LinearLayout>
 
         </ScrollView>

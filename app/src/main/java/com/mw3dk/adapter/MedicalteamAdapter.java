@@ -1,29 +1,21 @@
 package com.mw3dk.adapter;
 
 import android.content.Context;
-import android.content.pm.PackageManager;
-import android.content.pm.ResolveInfo;
-import android.graphics.Movie;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
-
 import com.mw3dk.R;
-import com.mw3dk.activity.SearchResultActivity;
 import com.mw3dk.pojo.AllPojos;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by amanjham on 13/01/16.
  */
-public class ShareAdapter extends RecyclerView.Adapter<ShareAdapter.MyViewHolder> {
+public class MedicalteamAdapter extends RecyclerView.Adapter<MedicalteamAdapter.MyViewHolder> {
 
     private List<AllPojos> moviesList;
 
@@ -40,7 +32,7 @@ Context context;
     }
 
 
-    public ShareAdapter(Context mcontext,List<AllPojos> moviesList) {
+    public MedicalteamAdapter(Context mcontext, List<AllPojos> moviesList) {
         context=mcontext;
         this.moviesList = moviesList;
     }
@@ -48,7 +40,7 @@ Context context;
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.searchlist, parent, false);
+                .inflate(R.layout.medicalteam_list, parent, false);
 
         return new MyViewHolder(itemView);
     }
