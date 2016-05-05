@@ -133,7 +133,7 @@ Toolbar toolbar;
                     @Override
                     public void onItemClick(View view, int position) {
 //
-                        Intent i=new Intent(SearchResultActivity.this,BookappointmentActivity.class);
+                        Intent i=new Intent(SearchResultActivity.this,Doctor_Profile_Activity.class);
                         startActivity(i);
                     }
                 })

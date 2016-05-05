@@ -1,17 +1,21 @@
 package com.mw3dk.activity;
 
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
 import com.mw3dk.R;
+import com.mw3dk.adapter.DoctorProfileAdapter;
 import com.mw3dk.extras.Constants;
 import com.mw3dk.fragments.DrawerFragment;
 
@@ -21,27 +25,30 @@ import butterknife.OnClick;
 import butterknife.Optional;
 
 /**
- * Created by snyxius on 3/5/16.
+ * Created by snyxius on 5/5/16.
  */
-public class WellguideActivity extends AppCompatActivity implements View.OnClickListener{
+public class Doctor_Profile_Activity extends AppCompatActivity implements View.OnClickListener{
     Toolbar toolbar;
     DrawerLayout drawerLayout;
     ActionBarDrawerToggle drawerToggle;
-    @Optional @InjectView(R.id.toolbar_title) TextView signintxt ;
-    @Optional @InjectView(R.id.text1) TextView text1 ;
-    @Optional @InjectView(R.id.text2) TextView text2 ;
+    private RecyclerView mRecyclerView;
 
+    private DoctorProfileAdapter mAdapter;
+    private RecyclerView.LayoutManager mLayoutManager;
+    private String[] mDataset = {"29 degrees", "Seahawks 24 - 27 Bengals",
+            "Half Life 3 announced"};
+//    private int mDatasetTypes[] = {WEATHER, SCORE, NEWS, NEWS}; //view types
 
-    @Optional @OnClick(R.id.bookagainbtn)
-    public void continue_click(){
+    //    @Optional
+//    @InjectView(R.id.toolbar_title)
+//    TextView signintxt ;
 
-    }
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.wellguideskinscreeng);
+        setContentView(R.layout.doctorprofile_main);
         ButterKnife.inject(this);
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -55,9 +62,24 @@ public class WellguideActivity extends AppCompatActivity implements View.OnClick
     }
 
     private void initialise(){
-        Typeface face= Typeface.createFromAsset(getAssets(), "fonts/AvenirNextLTPro-Regular.otf");
-        text1.setTypeface(face);
-        text2.setTypeface(face);
+//        Typeface face= Typeface.createFromAsset(getAssets(), "fonts/AvenirNextLTPro-Regular.otf");
+//        speciality.setTypeface(face);
+//        insurance.setTypeface(face);
+//        aig.setTypeface(face);
+//        location.setTypeface(face);
+//        street.setTypeface(face);
+//        physician.setTypeface(face);
+
+
+
+        mRecyclerView = (RecyclerView) findViewById(R.id.rvList);
+        mLayoutManager = new LinearLayoutManager(this);
+        mRecyclerView.setLayoutManager(mLayoutManager);
+//Adapter is created in the last step
+
+        mAdapter = new DoctorProfileAdapter(Doctor_Profile_Activity.this,mDataset);
+        mRecyclerView.setAdapter(mAdapter);
+
 
 
     }

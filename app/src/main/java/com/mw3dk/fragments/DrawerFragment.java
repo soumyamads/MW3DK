@@ -15,6 +15,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.mw3dk.R;
+import com.mw3dk.activity.BookappointmentActivity;
 import com.mw3dk.activity.MedicalTeam;
 import com.mw3dk.activity.SearchResultActivity;
 import com.mw3dk.activity.SignInActivity;
@@ -75,6 +76,10 @@ public class DrawerFragment extends Fragment implements View.OnClickListener{
         view.findViewById(R.id.relatv_welguide).setOnClickListener(this);
         view.findViewById(R.id.welgdtxt).setOnClickListener(this);
         view.findViewById(R.id.welguidimg).setOnClickListener(this);
+        view.findViewById(R.id.reltvapointmnt).setOnClickListener(this);
+        view.findViewById(R.id.pastapntimg).setOnClickListener(this);
+        view.findViewById(R.id.patapttxt).setOnClickListener(this);
+
 
     }
 
@@ -99,6 +104,13 @@ public class DrawerFragment extends Fragment implements View.OnClickListener{
                 Intent i3=new Intent(getActivity(), WellguideActivity.class);
                 startActivity(i3);
                 break;
+            case R.id.reltvapointmnt:
+            case R.id.pastapntimg:
+            case R.id.patapttxt:
+                Intent i4=new Intent(getActivity(), BookappointmentActivity.class);
+                startActivity(i4);
+                break;
+
         }
     }
 }

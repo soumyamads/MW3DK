@@ -1,38 +1,20 @@
 package com.mw3dk.fragments;
 
-import android.app.Activity;
 import android.os.Bundle;
-import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
-import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.Spinner;
-import android.widget.TextView;
-
 
 import com.mw3dk.R;
-import com.mw3dk.extras.Constants;
-
-import org.json.JSONArray;
-import org.json.JSONObject;
-
-import java.util.ArrayList;
-import java.util.List;
 
 import butterknife.ButterKnife;
-import butterknife.InjectView;
-import butterknife.Optional;
 
 
 /**
  * Created by snyxius on 10/15/2015.
  */
-public class AppointmentFragment extends Fragment implements View.OnClickListener{
+public class AppointmentDetailsFragment extends Fragment implements View.OnClickListener{
 
 //            @Optional @InjectView(R.id.spinner1) Spinner spinner1;
 //    @Optional @InjectView(R.id.spinner2) Spinner spinner2;
@@ -60,7 +42,7 @@ public class AppointmentFragment extends Fragment implements View.OnClickListene
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.appointment, container, false);
+        View rootView = inflater.inflate(R.layout.appointment_details, container, false);
 
         ButterKnife.inject(this,rootView);
         return rootView;
@@ -70,7 +52,6 @@ public class AppointmentFragment extends Fragment implements View.OnClickListene
     @Override
     public void onViewCreated(final View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        view.findViewById(R.id.continues).setOnClickListener(this);
         // Spinner Drop down elements
 //        List<String> categories = new ArrayList<String>();
 //        categories.add("Automobile");
@@ -97,14 +78,33 @@ public class AppointmentFragment extends Fragment implements View.OnClickListene
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.continues:
-               getActivity(). getSupportFragmentManager().beginTransaction()
-                        .add(R.id.container_book,new AppointmentDetailsFragment(), Constants.APPOINTMENT)
-                        .commit();
+       /* switch (v.getId()) {
+            case R.id.continue_button:
+                validate();
+//               sendBasicData();
+                break;
+            case R.id.select_business_layout:
+                passData.setBusinessData(business_text.getText().toString());
                 break;
 
-        }
+            case R.id.quickimage:
+
+                DialogFragment dialogFrag = QuickDescriptionDialogFragment.newInstance();
+                dialogFrag.setCancelable(false);
+                dialogFrag.show(getFragmentManager().beginTransaction(), Constants.SUCCESSDIALOG_FRAGMENT);
+                break;
+            case R.id.template:
+            case R.id.templates:
+
+
+                FragmentManager manager = getFragmentManager();
+
+                TempFragment dialog = new TempFragment();
+                dialog.show(manager, "stepOne");
+
+                break;
+
+        }*/
     }
 
 
