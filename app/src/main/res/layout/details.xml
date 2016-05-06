@@ -1,0 +1,97 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusableInTouchMode="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#979797"
+            />
+        <ScrollView
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="30dp">
+
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Appointment Details"
+                    android:layout_toRightOf="@+id/chk1"
+                    android:textColor="#002148"
+
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.2dp"
+                    android:background="#979797"
+                    />
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Verify your phone number"
+                    android:layout_toRightOf="@+id/chk1"
+                    android:textColor="#002148"
+                    android:textSize="16dp"
+                    android:layout_marginTop="40dp"/>
+
+                <EditText
+                    android:id="@+id/firstname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Phone Number"
+                    android:inputType="textPersonName"
+                    android:background="@drawable/rounded_edittextgrey"
+                    android:padding="15dp"
+                    android:layout_marginTop="20dp"/>
+
+                <Button
+                    android:id="@+id/callme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bottom_selector_secondary"
+                    android:layout_marginTop="25dp"
+                    android:textColor="@android:color/white"
+                    android:text="Call me"
+                    android:textAllCaps="false"
+                    />
+                <Button
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bottom_selector_secondary"
+                    android:layout_marginTop="25dp"
+                    android:textColor="@android:color/white"
+                    android:text="Email me"
+                    android:textAllCaps="false"
+                    />
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/container_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#ffffff" />
+</android.support.v4.widget.DrawerLayout>

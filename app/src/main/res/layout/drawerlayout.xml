@@ -18,9 +18,9 @@
     >
     <ImageView
         android:id="@+id/search"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:src="@drawable/location"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:src="@drawable/magnifier_ic"
         />
 
     <TextView
@@ -55,9 +55,9 @@
             >
             <ImageView
                 android:id="@+id/signinimg"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/location"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/path"
                 />
 
             <TextView
@@ -81,9 +81,9 @@
             >
             <ImageView
                 android:id="@+id/joinimg"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/location"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/join_ic"
                 />
 
             <TextView
@@ -109,7 +109,7 @@
                 android:id="@+id/medicltmimg"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/location"
+                android:src="@drawable/medical_team_ic"
                 />
 
             <TextView
@@ -133,9 +133,9 @@
             >
             <ImageView
                 android:id="@+id/welguidimg"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/location"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/well_guideic"
                 />
 
             <TextView
@@ -159,9 +159,9 @@
             >
             <ImageView
                 android:id="@+id/pastapntimg"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/location"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/post_appointments_ic"
                 />
 
             <TextView
@@ -185,9 +185,9 @@
             >
             <ImageView
                 android:id="@+id/settings"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/location"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/settings_ic"
                 />
 
             <TextView

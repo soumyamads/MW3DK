@@ -59,7 +59,7 @@
                     android:text="Mark Jacob(Me)"/>
 
                 <TextView
-                    android:id="@+id/text3"
+                    android:id="@+id/addnewpatient"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Add a new patient"

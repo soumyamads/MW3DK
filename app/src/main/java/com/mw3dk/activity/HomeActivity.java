@@ -32,21 +32,23 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
 //    @Optional
 //    @InjectView(R.id.toolbar_title)
 //    TextView signintxt ;
-    @Optional @InjectView(R.id.speciality) TextView speciality ;
-    @Optional @InjectView(R.id.physician) TextView physician ;
-    @Optional @InjectView(R.id.location) TextView location ;
-    @Optional @InjectView(R.id.olayastrt) TextView street ;
-    @Optional @InjectView(R.id.insurance) TextView insurance ;
-    @Optional @InjectView(R.id.aig) TextView aig ;
+    @Optional @InjectView(R.id.specialitytxt) TextView speciality ;
+    @Optional @InjectView(R.id.spcltyphysicianphysician) TextView physician ;
+    @Optional @InjectView(R.id.location_txt) TextView location ;
+    @Optional @InjectView(R.id.loctn_adrs) TextView street ;
+    @Optional @InjectView(R.id.insurancetxt) TextView insurance ;
+    @Optional @InjectView(R.id.insurancetxtaig) TextView aig ;
 
 
     @Optional @OnClick(R.id.bookagainbtn
 
     )
     public void continue_click(){
-Intent i=new Intent(HomeActivity.this,SearchResultActivity.class);
+    Intent i=new Intent(HomeActivity.this,SearchResultActivity.class);
         startActivity(i);
     }
+
+
 
 
     @Override
@@ -73,7 +75,16 @@ Intent i=new Intent(HomeActivity.this,SearchResultActivity.class);
         location.setTypeface(face);
         street.setTypeface(face);
         physician.setTypeface(face);
-
+        findViewById(R.id.relative_location).setOnClickListener(this);
+        findViewById(R.id.loctn_adrs).setOnClickListener(this);
+        findViewById(R.id.location_img).setOnClickListener(this);
+        findViewById(R.id.location_txt).setOnClickListener(this);
+        findViewById(R.id.relatvinsurance).setOnClickListener(this);
+        findViewById(R.id.insurancetxt).setOnClickListener(this);
+        findViewById(R.id.insurancetxtaig).setOnClickListener(this);
+        findViewById(R.id.insurncimg).setOnClickListener(this);
+//        findViewById(R.id.location_img).setOnClickListener(this);
+//        findViewById(R.id.location_txt).setOnClickListener(this);
 
 
     }
@@ -118,6 +129,23 @@ Intent i=new Intent(HomeActivity.this,SearchResultActivity.class);
 
     @Override
     public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.relative_location:
+            case R.id.loctn_adrs:
+            case R.id.location_img:
+            case R.id.location_txt:
+                Intent i=new Intent(HomeActivity.this,SelectLocation.class);
+                startActivity(i);
+                break;
+
+            case R.id.relatvinsurance:
+            case R.id.insurancetxt:
+            case R.id.insurancetxtaig:
+            case R.id.insurncimg:
+                Intent i1=new Intent(HomeActivity.this,InsuranceActivity.class);
+                startActivity(i1);
+                break;
+        }
 
     }
 }

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="match_parent">
+<android.support.v7.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:src="@drawable/cross"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Location"
+        android:layout_gravity="center"
+        android:id="@+id/toolbar_title"
+        android:textColor="#333447"
+        android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+        />
+
+</android.support.v7.widget.Toolbar>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:background="#979797"
+    />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="15dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/magnifier"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/magnifier_ic"/>
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bangalore"
+            android:layout_toRightOf="@+id/magnifier"
+            android:layout_marginLeft="15dp"
+            android:textColor="#002148"
+            android:textSize="16dp"
+            />
+        <ImageView
+            android:id="@+id/cross"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/cross"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+        <ImageView
+            android:id="@+id/currentlctn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/current_location"/>
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Location"
+            android:layout_toRightOf="@+id/currentlctn"
+            android:layout_marginLeft="15dp"
+            android:textColor="#002148"
+            android:textSize="18dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/plc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Domlur"
+            android:layout_marginLeft="35dp"
+            android:textColor="#002148"
+            android:textSize="16dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AREA"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</LinearLayout>
+</LinearLayout>

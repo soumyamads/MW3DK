@@ -91,24 +91,31 @@ public class DrawerFragment extends Fragment implements View.OnClickListener{
             case R.id.medicltxt:
                  Intent i=new Intent(getActivity(), MedicalTeam.class);
                 startActivity(i);
+                getActivity().finish();
                 break;
             case R.id.signinimg:
             case R.id.signintxt:
             case R.id.relative_signin:
                 Intent i1=new Intent(getActivity(), SignInActivity.class);
                 startActivity(i1);
+                getActivity().finish();
+
                 break;
             case R.id.relatv_welguide:
             case R.id.welgdtxt:
             case R.id.welguidimg:
                 Intent i3=new Intent(getActivity(), WellguideActivity.class);
                 startActivity(i3);
+                getActivity().finish();
+
                 break;
             case R.id.reltvapointmnt:
             case R.id.pastapntimg:
             case R.id.patapttxt:
                 Intent i4=new Intent(getActivity(), BookappointmentActivity.class);
                 startActivity(i4);
+                getActivity().finish();
+
                 break;
 
         }

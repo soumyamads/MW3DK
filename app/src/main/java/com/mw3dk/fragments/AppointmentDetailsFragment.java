@@ -1,14 +1,20 @@
 package com.mw3dk.fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.mw3dk.R;
+import com.mw3dk.activity.AddPatient;
+import com.mw3dk.extras.Constants;
 
 import butterknife.ButterKnife;
+import butterknife.InjectView;
+import butterknife.Optional;
 
 
 /**
@@ -16,7 +22,9 @@ import butterknife.ButterKnife;
  */
 public class AppointmentDetailsFragment extends Fragment implements View.OnClickListener{
 
-//            @Optional @InjectView(R.id.spinner1) Spinner spinner1;
+//            @Optional
+//            @InjectView(R.id.addnewpatient)
+            TextView adddpatient;
 //    @Optional @InjectView(R.id.spinner2) Spinner spinner2;
 
 //
@@ -52,38 +60,22 @@ public class AppointmentDetailsFragment extends Fragment implements View.OnClick
     @Override
     public void onViewCreated(final View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        // Spinner Drop down elements
-//        List<String> categories = new ArrayList<String>();
-//        categories.add("Automobile");
-//        categories.add("Business Services");
-//        categories.add("Computers");
-//        categories.add("Education");
-//        categories.add("Personal");
-//        categories.add("Travel");
-//
-//
-//        // Creating adapter for spinner
-//        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(getActivity().getApplicationContext(), android.R.layout.simple_spinner_item, categories);
-//
-//        // Drop down layout style - list view with radio button
-//        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
-        // attaching data adapter to spinner
-//        spinner1.setAdapter(dataAdapter);
-//        spinner2.setAdapter(dataAdapter);
-
+            view.findViewById(R.id.addnewpatient).setOnClickListener(this);
+        view.findViewById(R.id.bookagainbtn).setOnClickListener(this);
 
     }
 
 
     @Override
     public void onClick(View v) {
-       /* switch (v.getId()) {
-            case R.id.continue_button:
-                validate();
-//               sendBasicData();
+        switch (v.getId()) {
+            case R.id.bookagainbtn:
+                getActivity(). getSupportFragmentManager().beginTransaction()
+                        .add(R.id.container_book,new DetailsFragment(), Constants.APPOINTMENT)
+                        .commit();
                 break;
-            case R.id.select_business_layout:
+/*            case R.id.select_business_layout:
                 passData.setBusinessData(business_text.getText().toString());
                 break;
 
@@ -102,9 +94,9 @@ public class AppointmentDetailsFragment extends Fragment implements View.OnClick
                 TempFragment dialog = new TempFragment();
                 dialog.show(manager, "stepOne");
 
-                break;
+                break;*/
 
-        }*/
+        }
     }
 
 

@@ -56,10 +56,11 @@
                 android:orientation="vertical"
                 android:padding="15dp">
                 <RelativeLayout
-                    android:id="@+id/linear1"
+                    android:id="@+id/relatvspclty"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
+                    android:padding="10dp"
 
                     >
 
@@ -69,13 +70,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
+
                     android:orientation="vertical"
                     android:background="@drawable/rounded_edittextgrey"
                     >
 
 
                 <TextView
-                    android:id="@+id/speciality"
+                    android:id="@+id/specialitytxt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Speciality"
@@ -86,7 +88,7 @@
 
                     />
                 <TextView
-                    android:id="@+id/physician"
+                    android:id="@+id/spcltyphysicianphysician"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="General Physician"
@@ -98,13 +100,14 @@
                 </LinearLayout>
 
                     <ImageView
+                        android:id="@+id/spcltimg"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:src="@drawable/speciality"
                         android:layout_marginRight="-10dp"/>
                 </RelativeLayout>
                 <RelativeLayout
-                    android:id="@+id/linear2"
+                    android:id="@+id/relative_location"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
@@ -124,7 +127,7 @@
 
 
                         <TextView
-                            android:id="@+id/location"
+                            android:id="@+id/location_txt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Location"
@@ -135,7 +138,7 @@
 
                             />
                         <TextView
-                            android:id="@+id/olayastrt"
+                            android:id="@+id/loctn_adrs"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Olaya street"
@@ -146,13 +149,14 @@
                             android:layout_marginBottom="8dp"/>
                     </LinearLayout>
                     <ImageView
+                        android:id="@+id/location_img"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:src="@drawable/location"
                         android:layout_marginRight="-10dp"/>
                 </RelativeLayout>
                 <RelativeLayout
-                    android:id="@+id/linear3"
+                    android:id="@+id/relatvinsurance"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
@@ -172,7 +176,7 @@
 
 
                         <TextView
-                            android:id="@+id/insurance"
+                            android:id="@+id/insurancetxt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Insurance"
@@ -184,7 +188,7 @@
 
                             />
                         <TextView
-                            android:id="@+id/aig"
+                            android:id="@+id/insurancetxtaig"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="AIG"
@@ -195,6 +199,7 @@
                             android:layout_marginBottom="8dp"/>
                     </LinearLayout>
                     <ImageView
+                        android:id="@+id/insurncimg"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:src="@drawable/insurance"

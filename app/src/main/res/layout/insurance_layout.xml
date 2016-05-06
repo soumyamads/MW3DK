@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:id="@+id/cancel"
+            android:textColor="#333447"
+            android:textSize="15dp"
+            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Insurance"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_title"
+            android:textColor="#333447"
+            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+            />
+
+    </android.support.v7.widget.Toolbar>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffbef0ff"
+        android:clipToPadding="true"
+        android:padding="16dp"
+        android:saveEnabled="false" />
+
+</LinearLayout>
