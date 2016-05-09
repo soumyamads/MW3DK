@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
 
         <LinearLayout
@@ -12,9 +12,10 @@
             android:padding="10dp"
             >
             <Button
+                android:id="@+id/checkin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/rounded_edittextgrey"
+                android:background="@drawable/bottom_selector_secondary"
                 android:text="Check-in"
                 android:textColor="#ffffff"
                 android:layout_marginBottom="15dp"

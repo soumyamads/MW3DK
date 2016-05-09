@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+<ImageView
+    android:layout_width="20dp"
+    android:layout_height="20dp"
+    android:src="@drawable/back_icon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Appointment"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_title"
+            android:textColor="#333447"
+            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+            />
+
+    </android.support.v7.widget.Toolbar>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edittextgrey"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp">
+        <LinearLayout
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            >
+            <ImageView
+                android:id="@+id/profpic"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:src="@drawable/profoic"/>
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+                <TextView
+                    android:id="@+id/drname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dr. Abdul"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/chk1"
+                    android:textColor="#002148"
+
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    />
+                <TextView
+                    android:id="@+id/type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Internist"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/chk1"
+                    android:textSize="18dp"
+                    android:textColor="#75839b"
+
+                    />
+                <ImageView
+                    android:id="@+id/rate"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/rate"/>
+                <TextView
+                    android:id="@+id/streetname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0123456789"
+                    android:layout_toRightOf="@+id/chk1"
+                    android:textColor="#75839b"
+                    android:textSize="18dp"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/upcmgtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upcoming Appointment"
+            android:layout_marginTop="10dp"
+            android:textColor="#002148"
+            android:layout_gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/reltvupcmg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:layout_margin="20dp"        >
+        <ImageView
+            android:id="@+id/clkimg"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/pastappointments"/>
+        <LinearLayout
+            android:id="@+id/linearupcmg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/clkimg">
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mon,May  09 - 11:00am"
+                android:layout_marginLeft="20dp"
+                android:textColor="#002148"
+                />
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dental Consultation"
+                android:layout_marginLeft="20dp"
+                android:textColor="#002148"
+                android:layout_marginTop="6dp"
+                />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/rightarw"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/bluerightarw"/>
+    </RelativeLayout>
+</LinearLayout>

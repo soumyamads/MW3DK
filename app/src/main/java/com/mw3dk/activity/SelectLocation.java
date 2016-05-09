@@ -54,6 +54,7 @@ ImageView imagecross;
     }
 
     private void initialise(){
+        findViewById(R.id.close).setOnClickListener(this);
         Typeface face= Typeface.createFromAsset(getAssets(), "fonts/AvenirNextLTPro-Regular.otf");
       /*  speciality.setTypeface(face);
         insurance.setTypeface(face);
@@ -90,7 +91,7 @@ ImageView imagecross;
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.cross:
+            case R.id.close:
                 Intent i=new Intent(SelectLocation.this,HomeActivity.class);
                 startActivity(i);
                 finish();

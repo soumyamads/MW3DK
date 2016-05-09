@@ -65,13 +65,12 @@
         <android.support.v7.widget.RecyclerView
             android:id="@+id/rvList"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_gravity="start"
             android:background="#ffffff"
             android:choiceMode="singleChoice"
             android:divider="@android:color/transparent"
             android:dividerHeight="2dp"
-            android:layout_marginTop="20dp"
             />
     </LinearLayout>
     <FrameLayout

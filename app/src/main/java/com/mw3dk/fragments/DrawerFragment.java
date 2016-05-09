@@ -19,6 +19,7 @@ import com.mw3dk.activity.BookappointmentActivity;
 import com.mw3dk.activity.MedicalTeam;
 import com.mw3dk.activity.SearchResultActivity;
 import com.mw3dk.activity.SignInActivity;
+import com.mw3dk.activity.Upcoming_Activity;
 import com.mw3dk.activity.WellguideActivity;
 
 import butterknife.InjectView;
@@ -79,6 +80,9 @@ public class DrawerFragment extends Fragment implements View.OnClickListener{
         view.findViewById(R.id.reltvapointmnt).setOnClickListener(this);
         view.findViewById(R.id.pastapntimg).setOnClickListener(this);
         view.findViewById(R.id.patapttxt).setOnClickListener(this);
+        view.findViewById(R.id.relative_joinnw).setOnClickListener(this);
+        view.findViewById(R.id.joinimg).setOnClickListener(this);
+        view.findViewById(R.id.jointxt).setOnClickListener(this);
 
 
     }
@@ -117,6 +121,15 @@ public class DrawerFragment extends Fragment implements View.OnClickListener{
                 getActivity().finish();
 
                 break;
+            case R.id.relative_joinnw:
+            case R.id.joinimg:
+            case R.id.jointxt:
+                Intent i5=new Intent(getActivity(), Upcoming_Activity.class);
+                startActivity(i5);
+                getActivity().finish();
+
+                break;
+
 
         }
     }

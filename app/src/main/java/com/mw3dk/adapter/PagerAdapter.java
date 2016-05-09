@@ -42,10 +42,10 @@ public class PagerAdapter extends FragmentStatePagerAdapter {
         String title=" ";
         switch (position){
             case 0:
-                title="Game";
+                title="Profile";
                 break;
             case 1:
-                title="Movie";
+                title="Reviews";
                 break;
 //            case 2:
 //                title="Study";

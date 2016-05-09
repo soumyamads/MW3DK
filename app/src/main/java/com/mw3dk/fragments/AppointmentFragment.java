@@ -73,12 +73,12 @@ public class AppointmentFragment extends Fragment implements View.OnClickListene
         view.findViewById(R.id.continues).setOnClickListener(this);
 //         Spinner Drop down elements
         List<String> categories = new ArrayList<String>();
-        categories.add("Automobile");
-        categories.add("Business Services");
-        categories.add("Computers");
-        categories.add("Education");
-        categories.add("Personal");
-        categories.add("Travel");
+        categories.add("Keystone First");
+        categories.add("Liberty Dental");
+        categories.add("LifeMap");
+        categories.add("Medica");
+        categories.add("LifeWise");
+        categories.add("MassHealth");
 
 
         // Creating adapter for spinner

@@ -31,6 +31,19 @@
         <activity android:name=".activity.SelectLocation"/>
         <activity android:name=".activity.InsuranceMainLayout"/>
         <activity android:name=".activity.SelectSpecialityLayout"/>
+        <activity android:name=".activity.Upcoming_Activity"/>
+        <activity android:name=".activity.Wellguide_oneActivity"/>
+        <activity android:name=".activity.Wellguide_testActivity"/>
+        <activity android:name=".activity.Wellness_Activity"/>
+        <activity android:name=".activity.MedicalAppointment"/>
+        <activity android:name=".activity.Basic_info_patient"/>
+        <activity android:name=".activity.Checkin"/>
+        <activity android:name=".activity.Contact_info_patient"/>
+        <activity android:name=".activity.EmergencyContact"/>
+        <activity android:name=".activity.Insurance_info"/>
+        <activity android:name=".activity.Dental_Insurance_info"/>
+
+
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
 
     android:layout_height="wrap_content">
 
@@ -181,6 +183,10 @@
                 android:textColor="#002148"
                 android:textSize="18dp"
                 />
+            <RadioGroup
+                android:id="@+id/radioSex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
             <RadioButton
                 android:id="@+id/newpatient"
                 android:layout_width="wrap_content"
@@ -191,7 +197,7 @@
                 android:layout_toRightOf="@+id/chk1"
                 android:textColor="#002148"
                 android:textSize="18dp"
-                />
+android:buttonTint="#002148"                />
             <RadioButton
                 android:id="@+id/seendoctor"
                 android:layout_width="wrap_content"
@@ -202,7 +208,9 @@
                 android:layout_toRightOf="@+id/chk1"
                 android:textColor="#002148"
                 android:textSize="18dp"
+                android:buttonTint="#002148"
                 />
+            </RadioGroup>
 
             <View
                 android:layout_width="match_parent"

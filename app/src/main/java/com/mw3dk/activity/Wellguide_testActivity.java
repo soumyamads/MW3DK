@@ -10,21 +10,19 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.TextView;
 
 import com.mw3dk.R;
 import com.mw3dk.extras.Constants;
 import com.mw3dk.fragments.DrawerFragment;
 
 import butterknife.ButterKnife;
-import butterknife.InjectView;
 import butterknife.OnClick;
 import butterknife.Optional;
 
 /**
  * Created by snyxius on 3/5/16.
  */
-public class WellguideActivity extends AppCompatActivity implements View.OnClickListener{
+public class Wellguide_testActivity extends AppCompatActivity implements View.OnClickListener{
     Toolbar toolbar;
     DrawerLayout drawerLayout;
     ActionBarDrawerToggle drawerToggle;
@@ -33,10 +31,11 @@ public class WellguideActivity extends AppCompatActivity implements View.OnClick
 //    @Optional @InjectView(R.id.text2) TextView text2 ;
 //
 //
-    @Optional @OnClick(R.id.bookagainbtn)
+    @Optional @OnClick(R.id.bookscrn)
     public void continue_click(){
-Intent i=new Intent(WellguideActivity.this,Wellguide_oneActivity.class);
+        Intent i=new Intent(Wellguide_testActivity.this,Wellness_Activity.class);
         startActivity(i);
+
 
     }
 
@@ -44,7 +43,7 @@ Intent i=new Intent(WellguideActivity.this,Wellguide_oneActivity.class);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.wellguide);
+        setContentView(R.layout.wellguideskinscreeng);
         ButterKnife.inject(this);
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -54,7 +53,8 @@ Intent i=new Intent(WellguideActivity.this,Wellguide_oneActivity.class);
                 .add(R.id.container_drawer, new DrawerFragment(), Constants.DRAWER_FRAGMENT)
                 .commit();
         initDrawer();
-        initialise();
+//        initialise();
+
     }
 
     private void initialise(){
