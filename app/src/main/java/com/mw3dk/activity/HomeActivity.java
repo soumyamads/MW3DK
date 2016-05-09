@@ -83,8 +83,10 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.insurancetxt).setOnClickListener(this);
         findViewById(R.id.insurancetxtaig).setOnClickListener(this);
         findViewById(R.id.insurncimg).setOnClickListener(this);
-//        findViewById(R.id.location_img).setOnClickListener(this);
-//        findViewById(R.id.location_txt).setOnClickListener(this);
+        findViewById(R.id.relatvspclty).setOnClickListener(this);
+        findViewById(R.id.specialitytxt).setOnClickListener(this);
+        findViewById(R.id.spcltimg).setOnClickListener(this);
+        findViewById(R.id.spcltyphysicianphysician).setOnClickListener(this);
 
 
     }
@@ -142,8 +144,15 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.insurancetxt:
             case R.id.insurancetxtaig:
             case R.id.insurncimg:
-                Intent i1=new Intent(HomeActivity.this,InsuranceActivity.class);
+                Intent i1=new Intent(HomeActivity.this,InsuranceMainLayout.class);
                 startActivity(i1);
+                break;
+            case R.id.relatvspclty:
+            case R.id.specialitytxt:
+            case R.id.spcltimg:
+            case R.id.spcltyphysicianphysician:
+                Intent i2=new Intent(HomeActivity.this,SelectSpecialityLayout.class);
+                startActivity(i2);
                 break;
         }
 

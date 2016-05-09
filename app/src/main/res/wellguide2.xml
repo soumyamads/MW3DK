@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            >
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+
+                >
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Recommended for you"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/chk1"
+                    android:textColor="#002148"
+
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    />
+                <TextView
+                    android:id="@+id/value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3 of 5 "
+                    android:layout_marginTop="10dp"
+                    android:textSize="25dp"
+                    android:layout_gravity="center"
+                    android:textColor="#75839b"
+
+                    />
+
+                <TextView
+                    android:id="@+id/complete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="complete"
+                    android:textColor="#75839b"
+                    android:textSize="18dp"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"/>
+
+                <TextView
+                    android:id="@+id/skinscreenhtxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Skin Screening"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/chk1"
+                    android:textColor="#002148"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/darker_gray"/>
+
+                <TextView
+                    android:id="@+id/annualphysicaltxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Annual Physical"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/chk1"
+                    android:textColor="#002148"
+
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/darker_gray"/>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/violet_tick"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/violet_tick"
+        android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/visiontxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vision Exam"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/violet_tick"
+                    android:textColor="#75839b"
+                    android:layout_marginLeft="20dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    />
+</RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/darker_gray"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/violet_tick2"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/violet_tick"
+                        android:layout_marginTop="10dp"/>
+                    <TextView
+                        android:id="@+id/dntltxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dental Cleaning"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/violet_tick2"
+                        android:textColor="#75839b"
+                        android:layout_marginLeft="20dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        />
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/darker_gray"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/violet_tick3"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/violet_tick"
+                        android:layout_marginTop="10dp"/>
+                    <TextView
+                        android:id="@+id/signuptxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Signup for MW3Dk"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/violet_tick3"
+                        android:textColor="#75839b"
+                        android:layout_marginLeft="20dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+</LinearLayout>

@@ -29,7 +29,8 @@
         <activity android:name=".activity.Doctor_Profile_Activity"/>
         <activity android:name=".activity.AddPatient"/>
         <activity android:name=".activity.SelectLocation"/>
-        <activity android:name=".activity.InsuranceActivity"/>
+        <activity android:name=".activity.InsuranceMainLayout"/>
+        <activity android:name=".activity.SelectSpecialityLayout"/>
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="animals">
+        <item>A</item>
+
         <item>Abyssinian</item>
         <item>Adelie Penguin</item>
         <item>Affenpinscher</item>
@@ -52,6 +54,9 @@
         <item>Avocet</item>
         <item>Axolotl</item>
         <item>Aye Aye</item>
+
+        <item>B</item>
+
         <item>Baboon</item>
         <item>Bactrian Camel</item>
         <item>Badger</item>
@@ -118,6 +123,9 @@
         <item>Burrowing Frog</item>
         <item>Butterfly</item>
         <item>Butterfly Fish</item>
+
+        <item>C</item>
+
         <item>Caiman</item>
         <item>Caiman Lizard</item>
         <item>Cairn Terrier</item>
@@ -172,6 +180,9 @@
         <item>Curly Coated Retriever</item>
         <item>Cuscus</item>
         <item>Cuttlefish</item>
+
+        <item>D</item>
+
         <item>Dachshund</item>
         <item>Dalmatian</item>
         <item>Darwin\'s Frog</item>
@@ -196,6 +207,9 @@
         <item>Dunker</item>
         <item>Dusky Dolphin</item>
         <item>Dwarf Crocodile</item>
+
+        <item>E</item>
+
         <item>Eagle</item>
         <item>Earwig</item>
         <item>Eastern Gorilla</item>
@@ -217,6 +231,9 @@
         <item>Epagneul Pont Audemer</item>
         <item>Eskimo Dog</item>
         <item>Estrela Mountain Dog</item>
+
+        <item>F</item>
+
         <item>Falcon</item>
         <item>Fennec Fox</item>
         <item>Ferret</item>
@@ -239,6 +256,9 @@
         <item>Frilled Lizard</item>
         <item>Frog</item>
         <item>Fur Seal</item>
+
+        <item>G</item>
+
         <item>Galapagos Penguin</item>
         <item>Galapagos Tortoise</item>
         <item>Gar</item>
@@ -280,6 +300,9 @@
         <item>Guinea Fowl</item>
         <item>Guinea Pig</item>
         <item>Guppy</item>
+
+        <item>H</item>
+
         <item>Hammerhead Shark</item>
         <item>Hamster</item>
         <item>Hare</item>
@@ -303,6 +326,9 @@
         <item>Hummingbird</item>
         <item>Humpback Whale</item>
         <item>Hyena</item>
+
+        <item>I</item>
+
         <item>Ibis</item>
         <item>Ibizan Hound</item>
         <item>Iguana</item>
@@ -316,6 +342,9 @@
         <item>Insect</item>
         <item>Irish Setter</item>
         <item>Irish WolfHound</item>
+
+        <item>J</item>
+
         <item>Jack Russel</item>
         <item>Jackal</item>
         <item>Jaguar</item>
@@ -324,6 +353,9 @@
         <item>Javan Rhinoceros</item>
         <item>Javanese</item>
         <item>Jellyfish</item>
+
+        <item>K</item>
+
         <item>Kakapo</item>
         <item>Kangaroo</item>
         <item>Keel Billed Toucan</item>
@@ -335,6 +367,9 @@
         <item>Koala</item>
         <item>Komodo Dragon</item>
         <item>Kudu</item>
+
+        <item>L</item>
+
         <item>Labradoodle</item>
         <item>Labrador Retriever</item>
         <item>Ladybird</item>
@@ -354,6 +389,9 @@
         <item>Lobster</item>
         <item>Long-Eared Owl</item>
         <item>Lynx</item>
+
+        <item>M</item>
+
         <item>Macaroni Penguin</item>
         <item>Macaw</item>
         <item>Magellanic Penguin</item>
@@ -389,6 +427,9 @@
         <item>Mountain Lion</item>
         <item>Mouse</item>
         <item>Mule</item>
+
+        <item>N</item>
+
         <item>Neanderthal</item>
         <item>Neapolitan Mastiff</item>
         <item>Newfoundland</item>
@@ -398,6 +439,9 @@
         <item>Norwegian Forest</item>
         <item>Numbat</item>
         <item>Nurse Shark</item>
+
+        <item>O</item>
+
         <item>Ocelot</item>
         <item>Octopus</item>
         <item>Okapi</item>
@@ -408,6 +452,9 @@
         <item>Ostrich</item>
         <item>Otter</item>
         <item>Oyster</item>
+
+        <item>P</item>
+
         <item>Pademelon</item>
         <item>Panther</item>
         <item>Parrot</item>
@@ -443,10 +490,16 @@
         <item>Puss Moth</item>
         <item>Pygmy Hippopotamus</item>
         <item>Pygmy Marmoset</item>
+
+        <item>Q</item>
+
         <item>Quail</item>
         <item>Quetzal</item>
         <item>Quokka</item>
         <item>Quoll</item>
+
+        <item>R</item>
+
         <item>Rabbit</item>
         <item>Raccoon</item>
         <item>Raccoon Dog</item>
@@ -469,6 +522,9 @@
         <item>Rottweiler</item>
         <item>Royal Penguin</item>
         <item>Russian Blue</item>
+
+        <item>S</item>
+
         <item>Sabre-Toothed Tiger</item>
         <item>Saint Bernard</item>
         <item>Salamander</item>
@@ -530,6 +586,9 @@
         <item>Sumatran Tiger</item>
         <item>Sun Bear</item>
         <item>Swan</item>
+
+        <item>T</item>
+
         <item>Tang</item>
         <item>Tapir</item>
         <item>Tarsier</item>
@@ -550,12 +609,21 @@
         <item>Tuatara</item>
         <item>Turkey</item>
         <item>Turkish Angora</item>
+
+        <item>U</item>
+
         <item>Uakari</item>
         <item>Uguisu</item>
         <item>Umbrellabird</item>
+
+        <item>V</item>
+
         <item>Vampire Bat</item>
         <item>Vervet Monkey</item>
         <item>Vulture</item>
+
+        <item>W</item>
+
         <item>Wallaby</item>
         <item>Walrus</item>
         <item>Warthog</item>
@@ -583,10 +651,19 @@
         <item>Woolly Mammoth</item>
         <item>Woolly Monkey</item>
         <item>Wrasse</item>
+
+        <item>X</item>
+
         <item>X-Ray Tetra</item>
+
+        <item>Y</item>
+
         <item>Yak</item>
         <item>Yellow-Eyed Penguin</item>
         <item>Yorkshire Terrier</item>
+
+        <item>Z</item>
+
         <item>Zebra</item>
         <item>Zebra Shark</item>
         <item>Zebu</item>

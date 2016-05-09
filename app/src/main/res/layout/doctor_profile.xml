@@ -5,7 +5,8 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/rounded_edittextgrey">
+        android:background="@drawable/rounded_edittextgrey"
+        android:layout_margin="10dp">
 
 
             <LinearLayout
@@ -20,6 +21,7 @@
                     android:layout_height="100dp"
                     android:src="@drawable/profoic"
                     android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
 
                     />
 

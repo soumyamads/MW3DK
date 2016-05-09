@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="match_parent">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/rounded_edittextgrey"
-        android:layout_margin="10dp"
         android:layout_marginTop="10dp">
         <LinearLayout
             android:id="@+id/line1"
@@ -32,7 +32,7 @@
                     android:id="@+id/drname"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Dr. Abdul"
+                    android:text="Dr. Abdul Majid"
                     android:layout_marginTop="10dp"
                     android:layout_toRightOf="@+id/chk1"
                     android:textColor="#002148"
@@ -43,23 +43,19 @@
                     android:id="@+id/type"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Internist"
+                    android:text="Mon, May 09 - 11:am"
                     android:layout_marginTop="10dp"
                     android:layout_toRightOf="@+id/chk1"
                     android:textSize="18dp"
                     android:textColor="#75839b"
 
                     />
-                <ImageView
-                    android:id="@+id/rate"
-                    android:layout_width="120dp"
-                    android:layout_height="50dp"
-                    android:src="@drawable/rate"/>
+
                 <TextView
                     android:id="@+id/streetname"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="olayastreet,"
+                    android:text="Denatal Consultation"
                     android:layout_toRightOf="@+id/chk1"
                     android:textColor="#75839b"
                     android:textSize="18dp"
@@ -68,7 +64,7 @@
                     android:id="@+id/place"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Riyad,1432"
+                    android:text="I'm paying by myself"
                     android:layout_marginTop="8dp"
                     android:layout_toRightOf="@+id/chk1"
                     android:textColor="#75839b"
@@ -80,16 +76,6 @@
             </LinearLayout>
 
         </LinearLayout>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/line1"
-            android:background="@drawable/rounded_edittextgrey"
-            android:text="Next Availabe: Tuesday 12 May"
-            android:textColor="#2bbe69"
-            android:layout_marginBottom="15dp"
-            android:layout_marginLeft="12dp"
-            android:layout_marginRight="12dp"/>
-    </RelativeLayout>
 
+    </RelativeLayout>
 </LinearLayout>

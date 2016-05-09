@@ -19,7 +19,6 @@ import com.mw3dk.extras.Constants;
 import com.mw3dk.fragments.DrawerFragment;
 import com.mw3dk.pojo.AllPojos;
 import com.mw3dk.utils.DividerItemDecoration;
-import com.mw3dk.utils.RecyclerItemClickListener;
 import com.mw3dk.utils.VerticalSpaceItemDecoration;
 
 import java.util.ArrayList;
@@ -29,11 +28,11 @@ import butterknife.InjectView;
 import butterknife.Optional;
 
 /**
- * Created by snyxius on 3/5/16.
+ * Created by snyxius on 9/5/16.
  */
-public class SearchResultActivity extends AppCompatActivity {
+public class SearchResultActivity  extends AppCompatActivity {
     private RecyclerView mRecyclerView;
-Toolbar toolbar;
+    Toolbar toolbar;
     SearchResultAdapter adapter;
     DrawerLayout drawerLayout;
     ActionBarDrawerToggle drawerToggle;
