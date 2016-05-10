@@ -35,7 +35,7 @@ import butterknife.Optional;
 /**
  * Created by snyxius on 9/5/16.
  */
-public class InsuranceMainLayout extends AppCompatActivity {
+public class InsuranceMainLayout extends AppCompatActivity implements View.OnClickListener{
     private RecyclerView mRecyclerView;
     Toolbar toolbar;
     SearchResultAdapter adapter;
@@ -58,8 +58,7 @@ public class InsuranceMainLayout extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.insurance_layout);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-
-
+findViewById(R.id.cancel1).setOnClickListener(this);
 
 //        setSupportActionBar(toolbar);
 //        getSupportActionBar().setDisplayShowTitleEnabled(false);
@@ -68,7 +67,7 @@ public class InsuranceMainLayout extends AppCompatActivity {
 //                .commit();
 
 //        initDrawer();
-//        initRecyclerView();
+        initRecyclerView();
 //        getlist();
 
     }
@@ -106,7 +105,7 @@ public class InsuranceMainLayout extends AppCompatActivity {
 //        drawerToggle.onConfigurationChanged(newConfig);
     }
     private void initRecyclerView() {
-//        mRecyclerView = (RecyclerView) findViewById(R.id.recyclerview);
+        mRecyclerView = (RecyclerView) findViewById(R.id.recyclerview);
         layoutManager = new LinearLayoutManager(this);
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         mRecyclerView.setLayoutManager(layoutManager);
@@ -157,6 +156,18 @@ public class InsuranceMainLayout extends AppCompatActivity {
     }
     private String[] getDummyDataSet() {
         return getResources().getStringArray(R.array.animals);
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+
+            case R.id.cancel1:
+                Intent i = new Intent(InsuranceMainLayout.this, HomeActivity.class);
+                startActivity(i);
+                finish();
+                break;
+        }
     }
 
     private class AnimalsHeadersAdapter extends AnimalsAdapter<RecyclerView.ViewHolder>

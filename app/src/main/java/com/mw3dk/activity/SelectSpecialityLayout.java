@@ -1,5 +1,6 @@
 package com.mw3dk.activity;
 
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -31,14 +32,14 @@ import butterknife.Optional;
 /**
  * Created by snyxius on 9/5/16.
  */
-public class SelectSpecialityLayout extends AppCompatActivity {
+public class SelectSpecialityLayout extends AppCompatActivity implements View.OnClickListener{
     private RecyclerView mRecyclerView;
     Toolbar toolbar;
     SearchResultAdapter adapter;
     DrawerLayout drawerLayout;
     ActionBarDrawerToggle drawerToggle;
     //    ListView mylist;
-    TextView empty,createnewtext;
+    TextView empty,createnewtext,cancel;
     private LinearLayoutManager layoutManager;
 
     Button done;
@@ -54,7 +55,7 @@ public class SelectSpecialityLayout extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.speciality_layout);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-
+        findViewById(R.id.cancel).setOnClickListener(this);
 
 
 //        setSupportActionBar(toolbar);
@@ -64,7 +65,7 @@ public class SelectSpecialityLayout extends AppCompatActivity {
 //                .commit();
 
 //        initDrawer();
-//        initRecyclerView();
+        initRecyclerView();
 //        getlist();
 
     }
@@ -102,7 +103,7 @@ public class SelectSpecialityLayout extends AppCompatActivity {
 //        drawerToggle.onConfigurationChanged(newConfig);
     }
     private void initRecyclerView() {
-//        mRecyclerView = (RecyclerView) findViewById(R.id.recyclerview);
+        mRecyclerView = (RecyclerView) findViewById(R.id.recyclerview);
         layoutManager = new LinearLayoutManager(this);
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         mRecyclerView.setLayoutManager(layoutManager);
@@ -155,6 +156,17 @@ public class SelectSpecialityLayout extends AppCompatActivity {
         return getResources().getStringArray(R.array.animals);
     }
 
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.cancel:
+                Intent i = new Intent(SelectSpecialityLayout.this, HomeActivity.class);
+                startActivity(i);
+                finish();
+                break;
+
+        }
+    }
     private class AnimalsHeadersAdapter extends AnimalsAdapter<RecyclerView.ViewHolder>
             implements StickyRecyclerHeadersAdapter<RecyclerView.ViewHolder> {
         @Override

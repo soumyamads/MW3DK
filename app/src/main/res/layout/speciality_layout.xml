@@ -31,248 +31,249 @@
             />
 
     </android.support.v7.widget.Toolbar>
-    <!--<android.support.v7.widget.RecyclerView-->
-        <!--android:id="@+id/recyclerview"-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="true"
+        android:padding="16dp"
+        android:saveEnabled="false" />
+    <!--<ScrollView-->
         <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent"-->
-        <!--android:clipToPadding="true"-->
-        <!--android:padding="16dp"-->
-        <!--android:saveEnabled="false" />-->
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        <!--android:layout_height="wrap_content">-->
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical">-->
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@android:color/darker_gray">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="A"
-            android:textColor="#333447"
-            android:textSize="15dp"
-            android:layout_marginLeft="20dp"
-            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
-            />
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@android:color/darker_gray">-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="A"-->
+            <!--android:textColor="#333447"-->
+            <!--android:textSize="15dp"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"-->
+            <!--/>-->
 
+    <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@android:color/white"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_marginTop="10dp">-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Access Dental"-->
+            <!--android:textColor="#333447"-->
+            <!--android:textSize="15dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"-->
+            <!--/>-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="ADN Administrators"-->
+            <!--android:textColor="#333447"-->
+            <!--android:textSize="15dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"-->
+            <!--/>-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Aetna"-->
+            <!--android:textColor="#333447"-->
+            <!--android:layout_marginTop="10dp"-->
+
+            <!--android:textSize="15dp"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"-->
+            <!--/>-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Access Dental"-->
+            <!--android:textColor="#333447"-->
+            <!--android:textSize="15dp"-->
+            <!--android:layout_marginTop="10dp"-->
+
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"-->
+            <!--/>-->
+
+    <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@android:color/darker_gray"-->
+        <!--android:layout_marginTop="10dp">-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="B"-->
+            <!--android:textColor="#333447"-->
+            <!--android:textSize="15dp"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"-->
+            <!--/>-->
+
+    <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@android:color/white"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_marginTop="10dp">-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Best Life and Health"-->
+            <!--android:textColor="#333447"-->
+            <!--android:textSize="15dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"-->
+            <!--/>-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Blue choice Health Plan"-->
+            <!--android:textColor="#333447"-->
+            <!--android:textSize="15dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"-->
+            <!--/>-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Beam"-->
+            <!--android:textColor="#333447"-->
+            <!--android:layout_marginTop="10dp"-->
+
+            <!--android:textSize="15dp"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"-->
+            <!--/>-->
+          <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@android:color/darker_gray"-->
+            <!--android:layout_marginTop="10dp">-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="C"-->
+                <!--android:textColor="#333447"-->
+                <!--android:textSize="15dp"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"-->
+                <!--/>-->
+
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@android:color/white"-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_marginTop="10dp">-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="California Denatl"-->
+                <!--android:textColor="#333447"-->
+                <!--android:textSize="15dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"-->
+                <!--/>-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Capital Blue Cross"-->
+                <!--android:textColor="#333447"-->
+                <!--android:textSize="15dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"-->
+                <!--/>-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="CareSource"-->
+                <!--android:textColor="#333447"-->
+                <!--android:layout_marginTop="10dp"-->
+
+                <!--android:textSize="15dp"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"-->
+                <!--/>-->
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@android:color/darker_gray"-->
+            <!--android:layout_marginTop="10dp">-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="D"-->
+                <!--android:textColor="#333447"-->
+                <!--android:textSize="15dp"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"-->
+                <!--/>-->
+
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@android:color/white"-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_marginTop="10dp">-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="DenCap"-->
+                <!--android:textColor="#333447"-->
+                <!--android:textSize="15dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"-->
+                <!--/>-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Denex Dental"-->
+                <!--android:textColor="#333447"-->
+                <!--android:textSize="15dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"-->
+                <!--/>-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Dental Care Plus"-->
+                <!--android:textColor="#333447"-->
+                <!--android:layout_marginTop="10dp"-->
+
+                <!--android:textSize="15dp"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"-->
+                <!--/>-->
+        <!--</LinearLayout>-->
+<!--</LinearLayout>-->
+    <!--</ScrollView>-->
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@android:color/white"
-        android:orientation="vertical"
-        android:layout_marginTop="10dp">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Access Dental"
-            android:textColor="#333447"
-            android:textSize="15dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="20dp"
-            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ADN Administrators"
-            android:textColor="#333447"
-            android:textSize="15dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="20dp"
-            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Aetna"
-            android:textColor="#333447"
-            android:layout_marginTop="10dp"
-
-            android:textSize="15dp"
-            android:layout_marginLeft="20dp"
-            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Access Dental"
-            android:textColor="#333447"
-            android:textSize="15dp"
-            android:layout_marginTop="10dp"
-
-            android:layout_marginLeft="20dp"
-            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
-            />
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@android:color/darker_gray"
-        android:layout_marginTop="10dp">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="B"
-            android:textColor="#333447"
-            android:textSize="15dp"
-            android:layout_marginLeft="20dp"
-            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
-            />
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@android:color/white"
-        android:orientation="vertical"
-        android:layout_marginTop="10dp">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Best Life and Health"
-            android:textColor="#333447"
-            android:textSize="15dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="20dp"
-            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Blue choice Health Plan"
-            android:textColor="#333447"
-            android:textSize="15dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="20dp"
-            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Beam"
-            android:textColor="#333447"
-            android:layout_marginTop="10dp"
-
-            android:textSize="15dp"
-            android:layout_marginLeft="20dp"
-            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
-            />
-          </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/darker_gray"
-            android:layout_marginTop="10dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="C"
-                android:textColor="#333447"
-                android:textSize="15dp"
-                android:layout_marginLeft="20dp"
-                android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
-                />
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/white"
-            android:orientation="vertical"
-            android:layout_marginTop="10dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="California Denatl"
-                android:textColor="#333447"
-                android:textSize="15dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="20dp"
-                android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Capital Blue Cross"
-                android:textColor="#333447"
-                android:textSize="15dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="20dp"
-                android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="CareSource"
-                android:textColor="#333447"
-                android:layout_marginTop="10dp"
-
-                android:textSize="15dp"
-                android:layout_marginLeft="20dp"
-                android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
-                />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/darker_gray"
-            android:layout_marginTop="10dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="D"
-                android:textColor="#333447"
-                android:textSize="15dp"
-                android:layout_marginLeft="20dp"
-                android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
-                />
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/white"
-            android:orientation="vertical"
-            android:layout_marginTop="10dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="DenCap"
-                android:textColor="#333447"
-                android:textSize="15dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="20dp"
-                android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Denex Dental"
-                android:textColor="#333447"
-                android:textSize="15dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="20dp"
-                android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Dental Care Plus"
-                android:textColor="#333447"
-                android:layout_marginTop="10dp"
-
-                android:textSize="15dp"
-                android:layout_marginLeft="20dp"
-                android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
-                />
-        </LinearLayout>
-</LinearLayout>
-    </ScrollView></LinearLayout>
