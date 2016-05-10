@@ -17,6 +17,8 @@ public class EmergencyContact extends AppCompatActivity implements View.OnClickL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.emergency_contact);
         findViewById(R.id.emergencycntct_save).setOnClickListener(this);
+        findViewById(R.id.close).setOnClickListener(this);
+        findViewById(R.id.backicon).setOnClickListener(this);
     }
 
     @Override
@@ -26,7 +28,16 @@ public class EmergencyContact extends AppCompatActivity implements View.OnClickL
 
                 Intent i = new Intent(EmergencyContact.this, Insurance_info.class);
                 startActivity(i);
+                finish();
                 break;
+            case R.id.close:
+            case R.id.backicon:
+
+                Intent i1 = new Intent(EmergencyContact.this, Contact_info_patient.class);
+                startActivity(i1);
+                finish();
+                break;
+
         }
     }
 

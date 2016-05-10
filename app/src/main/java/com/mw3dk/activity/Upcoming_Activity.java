@@ -1,5 +1,6 @@
 package com.mw3dk.activity;
 
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
@@ -64,7 +65,7 @@ public class Upcoming_Activity extends AppCompatActivity implements View.OnClick
 //        location.setTypeface(face);
 //        street.setTypeface(face);
 //        physician.setTypeface(face);
-
+findViewById(R.id.backicon).setOnClickListener(this);
 
 
         mRecyclerView = (RecyclerView) findViewById(R.id.rvList);
@@ -119,6 +120,12 @@ public class Upcoming_Activity extends AppCompatActivity implements View.OnClick
 
     @Override
     public void onClick(View v) {
-
+switch (v.getId()){
+    case R.id.backicon:
+        Intent i=new Intent(Upcoming_Activity.this,MedicalAppointment.class);
+        startActivity(i);
+        finish();
+        break;
+}
     }
 }

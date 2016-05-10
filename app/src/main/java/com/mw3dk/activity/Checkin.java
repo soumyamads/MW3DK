@@ -20,6 +20,9 @@ public class Checkin extends AppCompatActivity implements View.OnClickListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.checkin);
         findViewById(R.id.agree).setOnClickListener(this);
+        findViewById(R.id.close).setOnClickListener(this);
+        findViewById(R.id.backicon).setOnClickListener(this);
+
     }
 
     @Override
@@ -29,6 +32,14 @@ public class Checkin extends AppCompatActivity implements View.OnClickListener{
 
                 Intent i = new Intent(Checkin.this, Basic_info_patient.class);
                 startActivity(i);
+                finish();
+                break;
+            case R.id.close:
+            case R.id.backicon:
+
+                Intent i1 = new Intent(Checkin.this, Upcoming_Activity.class);
+                startActivity(i1);
+                finish();
                 break;
         }
     }

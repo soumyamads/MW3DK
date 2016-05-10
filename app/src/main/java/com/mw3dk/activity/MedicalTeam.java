@@ -58,6 +58,7 @@ Intent i=new Intent(MedicalTeam.this,MedicalTeamResultActivity.class);
         getSupportFragmentManager().beginTransaction()
                 .add(R.id.container_drawer, new DrawerFragment(), Constants.DRAWER_FRAGMENT)
                 .commit();
+
         initDrawer();
         initialise();
     }

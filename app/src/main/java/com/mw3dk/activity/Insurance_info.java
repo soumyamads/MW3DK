@@ -65,6 +65,7 @@ public class Insurance_info extends AppCompatActivity implements View.OnClickLis
 
                 Intent i = new Intent(Insurance_info.this, HomeActivity.class);
                 startActivity(i);
+                finish();
                 break;
         }
     }

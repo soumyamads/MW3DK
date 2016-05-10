@@ -13,7 +13,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="10dp"
+            android:layout_margin="6dp"
             >
             <ImageView
                 android:id="@+id/profpic"
@@ -33,7 +33,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Dr. Abdul Majid"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="6dp"
                     android:layout_toRightOf="@+id/chk1"
                     android:textColor="#002148"
 
@@ -44,7 +44,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Mon, May 09 - 11:am"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="6dp"
                     android:layout_toRightOf="@+id/chk1"
                     android:textSize="18dp"
                     android:textColor="#75839b"
@@ -65,7 +65,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="I'm paying by myself"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="6dp"
                     android:layout_toRightOf="@+id/chk1"
                     android:textColor="#75839b"
                     android:textSize="18dp"
