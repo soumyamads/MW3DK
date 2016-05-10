@@ -117,13 +117,13 @@ Toolbar toolbar;
         mRecyclerView.setLayoutManager(layoutManager);
 
         //add ItemDecoration
-        mRecyclerView.addItemDecoration(new VerticalSpaceItemDecoration(2));
-        //or
-        mRecyclerView.addItemDecoration(
-                new DividerItemDecoration(this));
-        //or
-        mRecyclerView.addItemDecoration(
-                new DividerItemDecoration(this, R.drawable.divider));
+//        mRecyclerView.addItemDecoration(new VerticalSpaceItemDecoration(2));
+//        //or
+//        mRecyclerView.addItemDecoration(
+//                new DividerItemDecoration(this));
+//        //or
+//        mRecyclerView.addItemDecoration(
+//                new DividerItemDecoration(this, R.drawable.divider));
         adapter = new MedicalteamAdapter(this,estTypeListArray);
         mRecyclerView.setAdapter(adapter);
 

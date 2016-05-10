@@ -25,6 +25,8 @@ public class Insurance_info extends AppCompatActivity implements View.OnClickLis
         super.onCreate(savedInstanceState);
         setContentView(R.layout.insurance_info);
         findViewById(R.id.insurance_save).setOnClickListener(this);
+        findViewById(R.id.close).setOnClickListener(this);
+        findViewById(R.id.backicon).setOnClickListener(this);
 
 
         //spinner seting year
@@ -65,6 +67,14 @@ public class Insurance_info extends AppCompatActivity implements View.OnClickLis
 
                 Intent i = new Intent(Insurance_info.this, HomeActivity.class);
                 startActivity(i);
+                finish();
+                break;
+
+            case R.id.close:
+            case R.id.backicon:
+
+                Intent i1 = new Intent(Insurance_info.this, EmergencyContact.class);
+                startActivity(i1);
                 finish();
                 break;
         }

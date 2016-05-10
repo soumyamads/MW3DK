@@ -6,7 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/rounded_edittextgrey"
-        android:layout_margin="10dp">
+        android:layout_margin="5dp">
         <LinearLayout
             android:id="@+id/line1"
             android:layout_width="match_parent"
@@ -17,7 +17,7 @@
                 android:id="@+id/profpic"
                 android:layout_width="120dp"
                 android:layout_height="100dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 android:src="@drawable/profoic"/>
 
             <LinearLayout

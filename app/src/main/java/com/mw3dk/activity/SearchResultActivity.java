@@ -37,7 +37,7 @@ public class SearchResultActivity  extends AppCompatActivity {
     DrawerLayout drawerLayout;
     ActionBarDrawerToggle drawerToggle;
     //    ListView mylist;
-    TextView empty,createnewtext;
+    TextView empty,datetxt;
     private LinearLayoutManager layoutManager;
 
     Button done;
@@ -59,6 +59,7 @@ public class SearchResultActivity  extends AppCompatActivity {
         getSupportFragmentManager().beginTransaction()
                 .add(R.id.container_drawer, new DrawerFragment(), Constants.DRAWER_FRAGMENT)
                 .commit();
+        datetxt=(TextView)findViewById(R.id.date);
 
         initDrawer();
         initRecyclerView();
@@ -117,13 +118,13 @@ public class SearchResultActivity  extends AppCompatActivity {
         mRecyclerView.setLayoutManager(layoutManager);
 
         //add ItemDecoration
-        mRecyclerView.addItemDecoration(new VerticalSpaceItemDecoration(2));
+//        mRecyclerView.addItemDecoration(new VerticalSpaceItemDecoration(2));
         //or
-        mRecyclerView.addItemDecoration(
-                new DividerItemDecoration(this));
+//        mRecyclerView.addItemDecoration(
+//                new DividerItemDecoration(this));
         //or
-        mRecyclerView.addItemDecoration(
-                new DividerItemDecoration(this, R.drawable.divider));
+//        mRecyclerView.addItemDecoration(
+//                new DividerItemDecoration(this, R.drawable.divider));
         adapter = new SearchResultAdapter(this,estTypeListArray);
         mRecyclerView.setAdapter(adapter);
 

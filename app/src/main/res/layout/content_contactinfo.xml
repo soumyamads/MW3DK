@@ -29,7 +29,7 @@
             android:inputType="textPersonName"
             android:background="@drawable/rounded_edittextgrey"
             android:padding="15dp"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="15dp"/>
 
         <EditText
             android:id="@+id/addressline2"
@@ -39,7 +39,7 @@
             android:inputType="textEmailAddress"
             android:background="@drawable/rounded_edittextgrey"
             android:padding="15dp"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="15dp"/>
         <EditText
             android:id="@+id/adressline3"
             android:layout_width="fill_parent"
@@ -48,7 +48,7 @@
             android:inputType="textEmailAddress"
             android:background="@drawable/rounded_edittextgrey"
             android:padding="15dp"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="15dp"/>
         <EditText
             android:id="@+id/state"
             android:layout_width="fill_parent"
@@ -57,7 +57,7 @@
             android:inputType="textEmailAddress"
             android:background="@drawable/rounded_edittextgrey"
             android:padding="15dp"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="15dp"/>
         <EditText
             android:id="@+id/zipcode"
             android:layout_width="fill_parent"
@@ -66,7 +66,7 @@
             android:inputType="number"
             android:background="@drawable/rounded_edittextgrey"
             android:padding="15dp"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="15dp"/>
 
 
         <TextView
@@ -74,8 +74,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Phone"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
             android:layout_toRightOf="@+id/chk1"
             android:textColor="#002148"
             android:textSize="18dp"
@@ -90,7 +89,7 @@
             android:inputType="phone"
             android:background="@drawable/rounded_edittextgrey"
             android:padding="15dp"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="15dp"/>
         <EditText
             android:id="@+id/home"
             android:layout_width="fill_parent"
@@ -99,7 +98,7 @@
             android:inputType="phone"
             android:background="@drawable/rounded_edittextgrey"
             android:padding="15dp"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="15dp"/>
         <Button
             android:id="@+id/contactsave"
             android:layout_width="match_parent"
@@ -109,9 +108,7 @@
             android:text="Save and Continue"
             android:textAllCaps="false"
             android:textColor="#ffffff"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="12dp"
-            android:layout_marginBottom="15dp"
-            android:layout_marginRight="12dp"/>
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"/>
     </LinearLayout>
 </ScrollView>

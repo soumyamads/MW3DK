@@ -67,8 +67,8 @@
             android:hint="First"
             android:inputType="textPersonName"
             android:background="@drawable/rounded_edittextgrey"
-            android:padding="15dp"
-            android:layout_marginTop="20dp"/>
+            android:padding="10dp"
+            android:layout_marginTop="12dp"/>
 
         <EditText
             android:id="@+id/middle"
@@ -77,8 +77,8 @@
             android:hint="Middle"
             android:inputType="textEmailAddress"
             android:background="@drawable/rounded_edittextgrey"
-            android:padding="15dp"
-            android:layout_marginTop="20dp"/>
+            android:padding="10dp"
+            android:layout_marginTop="12dp"/>
         <TextView
             android:id="@+id/addres"
             android:layout_width="wrap_content"
@@ -95,8 +95,8 @@
             android:hint="Address Line 1"
             android:inputType="textPersonName"
             android:background="@drawable/rounded_edittextgrey"
-            android:padding="15dp"
-            android:layout_marginTop="20dp"/>
+            android:padding="10dp"
+            android:layout_marginTop="12dp"/>
 
         <EditText
             android:id="@+id/addressline2"
@@ -105,8 +105,8 @@
             android:hint="Address Line 2"
             android:inputType="textEmailAddress"
             android:background="@drawable/rounded_edittextgrey"
-            android:padding="15dp"
-            android:layout_marginTop="20dp"/>
+            android:padding="10dp"
+            android:layout_marginTop="12dp"/>
         <EditText
             android:id="@+id/adressline3"
             android:layout_width="fill_parent"
@@ -114,8 +114,8 @@
             android:hint="Indranagar"
             android:inputType="textEmailAddress"
             android:background="@drawable/rounded_edittextgrey"
-            android:padding="15dp"
-            android:layout_marginTop="20dp"/>
+            android:padding="10dp"
+            android:layout_marginTop="12dp"/>
         <EditText
             android:id="@+id/state"
             android:layout_width="fill_parent"
@@ -123,8 +123,8 @@
             android:hint="State"
             android:inputType="textEmailAddress"
             android:background="@drawable/rounded_edittextgrey"
-            android:padding="15dp"
-            android:layout_marginTop="20dp"/>
+            android:padding="10dp"
+            android:layout_marginTop="12dp"/>
         <EditText
             android:id="@+id/zipcode"
             android:layout_width="fill_parent"
@@ -132,8 +132,8 @@
             android:hint="Zipcode"
             android:inputType="number"
             android:background="@drawable/rounded_edittextgrey"
-            android:padding="15dp"
-            android:layout_marginTop="20dp"/>
+            android:padding="10dp"
+            android:layout_marginTop="12dp"/>
 
 
         <TextView
@@ -141,7 +141,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Responsible Party's Home Phone"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="12dp"
             android:layout_marginLeft="15dp"
             android:layout_toRightOf="@+id/chk1"
             android:textColor="#002148"
@@ -156,15 +156,15 @@
             android:hint="1234567890"
             android:inputType="phone"
             android:background="@drawable/rounded_edittextgrey"
-            android:padding="15dp"
-            android:layout_marginTop="20dp"/>
+            android:padding="10dp"
+            android:layout_marginTop="12dp"/>
 
         <TextView
             android:id="@+id/text4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Responsible Party's Work Phone"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="12dp"
             android:layout_marginLeft="15dp"
             android:layout_toRightOf="@+id/chk1"
             android:textColor="#002148"
@@ -178,14 +178,14 @@
             android:hint="1234567890"
             android:inputType="phone"
             android:background="@drawable/rounded_edittextgrey"
-            android:padding="15dp"
-            android:layout_marginTop="20dp"/>
+            android:padding="10dp"
+            android:layout_marginTop="12dp"/>
         <TextView
             android:id="@+id/text5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Responsible Party's Mobile Phone"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="12dp"
             android:layout_marginLeft="15dp"
             android:layout_toRightOf="@+id/chk1"
             android:textColor="#002148"
@@ -199,97 +199,101 @@
             android:hint="1234567890"
             android:inputType="phone"
             android:background="@drawable/rounded_edittextgrey"
-            android:padding="15dp"
-            android:layout_marginTop="20dp"/>
+            android:padding="10dp"
+            android:layout_marginTop="12dp"/>
         <TextView
             android:id="@+id/dob"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Date of Birth"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="12dp"
             android:layout_marginLeft="15dp"
             android:layout_toRightOf="@+id/chk1"
             android:textColor="#002148"
             android:textSize="18dp"
             />
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/rounded_edittextgrey"
-                android:layout_margin="15dp"
                 android:orientation="horizontal"
                 android:layout_weight="1"
-                android:padding="10dp"
+                android:layout_margin="6dp"
+                android:padding="5dp"
                 >
-            <Spinner
-                android:id="@+id/date"
-                android:drawSelectorOnTop="true"
-                android:layout_width="wrap_content"
-                android:background="@null"
-                android:layout_height="wrap_content"
-                android:textColor="#0000FF"
-                android:padding="10dp"
-                />
+                <Spinner
+                    android:id="@+id/date"
+                    android:drawSelectorOnTop="true"
+                    android:layout_width="wrap_content"
+                    android:background="@null"
+                    android:layout_height="wrap_content"
+                    android:textColor="#0000FF"
+                    android:padding="5dp"
+                    />
                 <!--<ImageView-->
-                    <!--android:layout_width="20dp"-->
-                    <!--android:layout_height="20dp"-->
-                    <!--android:src="@drawable/insurance"-->
-                    <!--android:layout_gravity="right"/>-->
+                <!--android:layout_width="20dp"-->
+                <!--android:layout_height="20dp"-->
+                <!--android:src="@drawable/downarw"-->
+                <!--android:layout_gravity="right|center_vertical"/>-->
             </LinearLayout>
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/rounded_edittextgrey"
-                android:layout_margin="15dp"
                 android:orientation="horizontal"
                 android:layout_weight="1"
-                android:padding="10dp"
+                android:padding="5dp"
+                android:layout_margin="6dp"
 
                 >
-            <Spinner
-                android:id="@+id/month"
-                android:drawSelectorOnTop="true"
-                android:layout_width="wrap_content"
-                android:background="@null"
-                android:layout_height="wrap_content"
-                android:textColor="#0000FF"
-                android:padding="10dp"
-                />
-                <!--<ImageView-->
-                    <!--android:layout_width="20dp"-->
-                    <!--android:layout_height="20dp"-->
-                    <!--android:src="@drawable/insurance"-->
-                    <!--android:padding="10dp"-->
-                    <!--android:layout_gravity="right"/>-->
-</LinearLayout>
+                <Spinner
+                    android:id="@+id/month"
+                    android:drawSelectorOnTop="true"
+                    android:layout_width="wrap_content"
+                    android:background="@null"
+                    android:layout_height="wrap_content"
+                    android:textColor="#0000FF"
+                    android:padding="5dp"
+
+                    />
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/downarw"
+                    android:padding="10dp"
+                    android:layout_gravity="right|center_vertical"/>
+            </LinearLayout>
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/rounded_edittextgrey"
-                android:layout_margin="15dp"
                 android:orientation="horizontal"
                 android:layout_weight="1"
-                android:padding="10dp"
+                android:padding="5dp"
+                android:layout_margin="6dp"
 
                 >
-            <Spinner
-                android:id="@+id/year"
-                android:drawSelectorOnTop="true"
-                android:layout_width="wrap_content"
-                android:background="@null"
-                android:layout_height="wrap_content"
-                android:textColor="#0000FF"
-                android:padding="10dp"/>
-                <!--<ImageView-->
-                    <!--android:layout_width="20dp"-->
-                    <!--android:layout_height="20dp"-->
-                    <!--android:src="@drawable/insurance"-->
-                    <!--android:layout_gravity="right"/>-->
-</LinearLayout>
+                <Spinner
+                    android:id="@+id/year"
+                    android:drawSelectorOnTop="true"
+                    android:layout_width="wrap_content"
+                    android:background="@null"
+                    android:layout_height="wrap_content"
+                    android:textColor="#0000FF"
+                    android:padding="5dp"
+
+                    />
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/downarw"
+                    android:padding="10dp"
+                    android:layout_gravity="right|center_vertical"/>
+            </LinearLayout>
         </LinearLayout>
         <Button
             android:id="@+id/insurance_save"

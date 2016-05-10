@@ -9,7 +9,6 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.mw3dk.R;
-import com.mw3dk.activity.AddPatient;
 
 import butterknife.ButterKnife;
 
