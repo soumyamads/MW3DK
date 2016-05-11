@@ -30,7 +30,7 @@ public class Dental_Insurance_info extends AppCompatActivity implements View.OnC
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dental_insurance_info);
-        findViewById(R.id.dentasavebtn).setOnClickListener(this);
+        findViewById(R.id.dentalsavebtn).setOnClickListener(this);
         findViewById(R.id.close).setOnClickListener(this);
         findViewById(R.id.backicon).setOnClickListener(this);
 
@@ -88,11 +88,11 @@ public class Dental_Insurance_info extends AppCompatActivity implements View.OnC
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.dentasavebtn:
+            case R.id.dentalsavebtn:
                 Intent i=new Intent(Dental_Insurance_info.this,HomeActivity.class);
                 startActivity(i);
                 finish();
-
+break;
             case R.id.close:
             case R.id.backicon:
 
