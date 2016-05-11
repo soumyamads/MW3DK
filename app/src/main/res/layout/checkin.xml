@@ -58,7 +58,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="10dp"
+            android:padding="5dp"
             >
             <ImageView
                 android:id="@+id/profpic"
@@ -103,7 +103,7 @@
                     android:text="Monday,May 09,2016 at 11:00am w/ a dental hygenist"
                     android:layout_toRightOf="@+id/chk1"
                     android:textColor="#75839b"
-                    android:textSize="18dp"
+                    android:textSize="16dp"
                     />
 
 
@@ -138,7 +138,6 @@
         android:layout_marginTop="10dp"
         android:layout_toRightOf="@+id/chk1"
         android:textColor="#002148"
-
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         />
 
@@ -150,9 +149,7 @@
         android:layout_marginTop="10dp"
         android:layout_toRightOf="@+id/chk1"
         android:textColor="#002148"
-
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        />
+android:textSize="15dp"        />
 </LinearLayout>
 
     </RelativeLayout>
@@ -164,7 +161,7 @@
         android:layout_marginTop="10dp"
         android:layout_toRightOf="@+id/chk1"
         android:textColor="#002148"
-        android:padding="10dp"
+        android:padding="15dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Small"
         />
     <Button

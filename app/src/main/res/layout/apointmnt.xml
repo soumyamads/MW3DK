@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:background="@android:color/white"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#e7e7e7">
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -33,9 +33,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/rounded_edittextgrey"
-        android:layout_margin="10dp"
-        android:layout_marginTop="10dp">
+        android:background="#ffffff">
         <LinearLayout
             android:id="@+id/line1"
             android:layout_width="match_parent"
@@ -99,39 +97,50 @@
         </LinearLayout>
 
     </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="#e7e7e7"
+
+        >
         <TextView
             android:id="@+id/upcmgtxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Upcoming Appointment"
+            android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp"
             android:textColor="#002148"
             android:layout_gravity="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             />
     </LinearLayout>
+
     <RelativeLayout
         android:id="@+id/reltvupcmg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-android:layout_margin="20dp"        >
-        <ImageView
+        android:background="@android:color/white"
+>        <ImageView
             android:id="@+id/clkimg"
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_centerVertical="true"
-            android:src="@drawable/pastappointments"/>
+            android:src="@drawable/pastappointments"
+        android:layout_marginLeft="15dp"/>
         <LinearLayout
             android:id="@+id/linearupcmg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_toRightOf="@+id/clkimg">
+            android:layout_toRightOf="@+id/clkimg"
+            android:layout_marginTop="10dp">
 
             <TextView
                 android:id="@+id/txt1"
@@ -141,7 +150,6 @@ android:layout_margin="20dp"        >
                 android:layout_marginLeft="20dp"
                 android:textColor="#002148"
                 />
-
             <TextView
                 android:id="@+id/txt2"
                 android:layout_width="wrap_content"
@@ -157,6 +165,7 @@ android:layout_margin="20dp"        >
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
             android:layout_centerVertical="true"
             android:src="@drawable/bluerightarw"/>
     </RelativeLayout>

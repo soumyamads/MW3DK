@@ -1,5 +1,6 @@
 package com.mw3dk.activity;
 
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -38,9 +39,18 @@ public class SignInActivity extends AppCompatActivity implements View.OnClickLis
 
     @Optional @OnClick(R.id.continues)
     public void continue_click(){
+        Intent i=new Intent(SignInActivity.this,HomeActivity.class);
+        startActivity(i);
+        finish();
 
     }
+    @Optional @OnClick(R.id.joinnw)
+    public void joinnow(){
+        Intent i=new Intent(SignInActivity.this,JoinNowActivity.class);
+        startActivity(i);
+        finish();
 
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

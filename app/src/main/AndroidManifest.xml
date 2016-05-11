@@ -27,7 +27,7 @@
         <activity android:name=".activity.MedicalTeamResultActivity"/>
         <activity android:name=".activity.BookappointmentActivity"/>
         <activity android:name=".activity.Doctor_Profile_Activity"/>
-        <activity android:name=".activity.AddPatient"/>
+        <activity android:name=".activity.JoinNowActivity"/>
         <activity android:name=".activity.SelectLocation"/>
         <activity android:name=".activity.InsuranceMainLayout"/>
         <activity android:name=".activity.SelectSpecialityLayout"/>
@@ -42,6 +42,7 @@
         <activity android:name=".activity.EmergencyContact"/>
         <activity android:name=".activity.Insurance_info"/>
         <activity android:name=".activity.Dental_Insurance_info"/>
+        <activity android:name=".activity.Bookagain_Activity"/>
 
 
 

@@ -33,6 +33,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
 
                     >
                     <TextView
@@ -40,7 +41,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Dr. Abdul"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="6dp"
                         android:layout_toRightOf="@+id/chk1"
                         android:textColor="#002148"
 
@@ -51,7 +52,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Internist"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="5dp"
                         android:layout_toRightOf="@+id/chk1"
                         android:textSize="18dp"
                         android:textColor="#75839b"
@@ -77,7 +78,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Riyad,1432"
-                        android:layout_marginTop="8dp"
+                        android:layout_marginTop="6dp"
                         android:layout_toRightOf="@+id/chk1"
                         android:textColor="#75839b"
                         android:textSize="18dp"
@@ -95,7 +96,7 @@
                 android:background="@drawable/rounded_edittextgrey"
                 android:text="On Tue, May 19,2016, 2:15pm"
                 android:textColor="#2bbe69"
-                android:layout_marginBottom="15dp"
+                android:layout_marginBottom="8dp"
                 android:layout_marginLeft="12dp"
                 android:layout_marginRight="12dp"/>
         </RelativeLayout>
@@ -104,7 +105,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Will you use insurance?"
-            android:layout_marginTop="20dp"
             android:layout_marginLeft="15dp"
             android:layout_toRightOf="@+id/chk1"
             android:textColor="#002148"
@@ -114,7 +114,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_edittextgrey"
-            android:layout_margin="15dp"
+            android:layout_margin="10dp"
             >
             <Spinner
                 android:id="@+id/spinner1"
@@ -138,7 +138,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="What's the reason for your visit?"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="8dp"
             android:layout_marginLeft="15dp"
             android:layout_toRightOf="@+id/chk1"
             android:textColor="#002148"
@@ -148,7 +148,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_edittextgrey"
-            android:layout_margin="15dp"
+            android:layout_margin="10dp"
             >
             <Spinner
                 android:id="@+id/spinner2"
@@ -172,7 +172,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Have you visited this doctor before?"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:layout_marginLeft="15dp"
             android:layout_toRightOf="@+id/chk1"
             android:textColor="#002148"
@@ -187,10 +187,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="I'm a new patient"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginLeft="15dp"
                 android:layout_toRightOf="@+id/chk1"
-                android:textColor="#002148"
+                android:textColor="#75839b"
                 android:textSize="18dp"
                 android:buttonTint="#002148"                />
             <RadioButton
@@ -198,10 +198,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="I've seen this doctor before"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginLeft="15dp"
                 android:layout_toRightOf="@+id/chk1"
-                android:textColor="#002148"
+                android:textColor="#75839b"
                 android:textSize="18dp"
                 android:buttonTint="#002148"
                 />
@@ -211,6 +211,8 @@
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_marginTop="25dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
             android:background="@android:color/darker_gray"/>
 
         <Button
@@ -221,7 +223,7 @@
             android:background="@drawable/bottom_selector_secondary"
             android:text="Continue"
             android:textColor="#ffffff"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="15dp"
             android:layout_marginLeft="12dp"
             android:layout_marginBottom="15dp"
             android:layout_marginRight="12dp"/>

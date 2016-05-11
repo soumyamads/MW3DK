@@ -9,19 +9,24 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.mw3dk.R;
 import com.mw3dk.adapter.SearchResultAdapter;
 import com.mw3dk.extras.Constants;
+import com.mw3dk.fragments.DetailsFragment;
 import com.mw3dk.fragments.DrawerFragment;
 import com.mw3dk.pojo.AllPojos;
 import com.mw3dk.utils.DividerItemDecoration;
 import com.mw3dk.utils.VerticalSpaceItemDecoration;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 import butterknife.InjectView;
@@ -30,7 +35,7 @@ import butterknife.Optional;
 /**
  * Created by snyxius on 9/5/16.
  */
-public class SearchResultActivity  extends AppCompatActivity {
+public class SearchResultActivity  extends AppCompatActivity implements View.OnClickListener{
     private RecyclerView mRecyclerView;
     Toolbar toolbar;
     SearchResultAdapter adapter;
@@ -38,6 +43,7 @@ public class SearchResultActivity  extends AppCompatActivity {
     ActionBarDrawerToggle drawerToggle;
     //    ListView mylist;
     TextView empty,datetxt;
+    ImageView rightarw,leftarw;
     private LinearLayoutManager layoutManager;
 
     Button done;
@@ -46,7 +52,12 @@ public class SearchResultActivity  extends AppCompatActivity {
     @InjectView(R.id.toolbar_title) TextView toolbartxt ;
 
     List<AllPojos> list = new ArrayList<>();
+    Calendar c = Calendar.getInstance();
 
+//    System.out.println("Current time => " + c.getTime());
+
+    SimpleDateFormat df = new SimpleDateFormat("dd-MMM-yyyy");
+    String formattedDate = df.format(c.getTime());
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +71,20 @@ public class SearchResultActivity  extends AppCompatActivity {
                 .add(R.id.container_drawer, new DrawerFragment(), Constants.DRAWER_FRAGMENT)
                 .commit();
         datetxt=(TextView)findViewById(R.id.date);
+        rightarw=(ImageView)findViewById(R.id.rightarw);
+        leftarw=(ImageView)findViewById(R.id.leftar);
+        findViewById(R.id.rightarw).setOnClickListener(this);
+        findViewById(R.id.leftar).setOnClickListener(this);
+
+//        Calendar c = Calendar.getInstance();
+
+        System.out.println("Current time => " + c.getTime());
+
+//        SimpleDateFormat df = new SimpleDateFormat("dd-MMM-yyyy");
+//        String formattedDate = df.format(c.getTime());
+
+        datetxt.setText(formattedDate);
+        leftarw.setVisibility(View.GONE);
 
         initDrawer();
         initRecyclerView();
@@ -142,6 +167,25 @@ public class SearchResultActivity  extends AppCompatActivity {
     }
 
 
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.rightarw:
+                leftarw.setVisibility(View.VISIBLE);
+                c.add(Calendar.DATE, 1);
+                formattedDate = df.format(c.getTime());
 
+                Log.v("NEXT DATE : ", formattedDate);
+                datetxt.setText(formattedDate);
+                break;
 
+            case R.id.leftar:
+                c.add(Calendar.DATE, -1);
+                formattedDate = df.format(c.getTime());
+
+                Log.v("PREVIOUS DATE : ", formattedDate);
+                datetxt.setText(formattedDate);
+                break;
+        }
+    }
 }

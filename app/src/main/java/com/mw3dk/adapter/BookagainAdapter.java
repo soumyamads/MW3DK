@@ -1,6 +1,5 @@
 package com.mw3dk.adapter;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.support.design.widget.TabLayout;
@@ -25,7 +24,7 @@ import java.util.Calendar;
 /**
  * Created by snyxius on 5/5/16.
  */
-public class DoctorProfileAdapter extends RecyclerView.Adapter<DoctorProfileAdapter.ViewHolder> {
+public class BookagainAdapter extends RecyclerView.Adapter<BookagainAdapter.ViewHolder> {
     private static final String TAG = "CustomAdapter";
 
     private String[] mDataSet;
@@ -90,7 +89,7 @@ Context mcontext;
     }
 
 
-    public DoctorProfileAdapter(Context context,String[] dataSet) {
+    public BookagainAdapter(Context context, String[] dataSet) {
         mDataSet = dataSet;
 //        mDataSetTypes = dataSetTypes;
 mcontext=context;    }
@@ -108,11 +107,12 @@ mcontext=context;    }
                     .inflate(R.layout.map, viewGroup, false);
             return new NewsViewHolder(v);
         }
-        else {
-            v = LayoutInflater.from(viewGroup.getContext())
-                    .inflate(R.layout.viewpager, viewGroup, false);
-            return new ScoreViewHolder(v);
-        }
+        return null;
+//        else {
+//            v = LayoutInflater.from(viewGroup.getContext())
+//                    .inflate(R.layout.viewpager, viewGroup, false);
+//            return new ScoreViewHolder(v);
+//        }
     }
 
     @Override
@@ -202,10 +202,10 @@ mcontext=context;    }
         else if(position==1){
             return MAP_MIDDLE;
         }
-        else if(position==2){
-            return BOTTOM_LAYOUT;
-
-        }
-        return 3;
+//        else if(position==2){
+//            return BOTTOM_LAYOUT;
+//
+//        }
+        return 1;
     }
 }

@@ -116,25 +116,18 @@ Toolbar toolbar;
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         mRecyclerView.setLayoutManager(layoutManager);
 
-        //add ItemDecoration
-//        mRecyclerView.addItemDecoration(new VerticalSpaceItemDecoration(2));
-//        //or
-//        mRecyclerView.addItemDecoration(
-//                new DividerItemDecoration(this));
-//        //or
-//        mRecyclerView.addItemDecoration(
-//                new DividerItemDecoration(this, R.drawable.divider));
+
         adapter = new MedicalteamAdapter(this,estTypeListArray);
         mRecyclerView.setAdapter(adapter);
 
-        mRecyclerView.addOnItemTouchListener(
-                new RecyclerItemClickListener(this, new RecyclerItemClickListener.OnItemClickListener() {
-                    @Override
-                    public void onItemClick(View view, int position) {
-//
-                    }
-                })
-        );
+//        mRecyclerView.addOnItemTouchListener(
+//                new RecyclerItemClickListener(this, new RecyclerItemClickListener.OnItemClickListener() {
+//                    @Override
+//                    public void onItemClick(View view, int position) {
+////
+//                    }
+//                })
+//        );
 
     }
 

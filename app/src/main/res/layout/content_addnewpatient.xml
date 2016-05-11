@@ -8,87 +8,66 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="8dp">
-
-
-
-
+        android:padding="15dp">
         <TextView
             android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="15dp"
             android:text="Name"
+            android:layout_toRightOf="@+id/joinnw"
             android:textColor="#002148"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             />
         <EditText
-            android:id="@+id/firstname"
+            android:id="@+id/frstnam"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:hint="First"
             android:inputType="textPersonName"
             android:background="@drawable/rounded_edittextgrey"
-            android:padding="15dp"
-            android:layout_marginTop="10dp"/>
-
+            android:padding="10dp"
+            android:layout_marginTop="15dp"/>
         <EditText
-            android:id="@+id/secondname"
+            android:id="@+id/lastnam"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:hint="Second"
-            android:inputType="textEmailAddress"
+            android:hint="Last"
+            android:inputType="textPersonName"
             android:background="@drawable/rounded_edittextgrey"
-            android:padding="15dp"
-            android:layout_marginTop="10dp"/>
+            android:padding="10dp"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/emailtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Email(Optional)"
+            android:layout_toRightOf="@+id/joinnw"
+            android:textColor="#002148"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            />
         <EditText
             android:id="@+id/email"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:hint="Last"
+            android:hint=""
             android:inputType="textEmailAddress"
             android:background="@drawable/rounded_edittextgrey"
             android:padding="15dp"
-            android:layout_marginTop="10dp"/>
+            android:layout_marginTop="15dp"/>
 
-        <TextView
-            android:id="@+id/wiluse"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Sex"
-            android:layout_marginTop="10dp"
-            android:textColor="#002148"
-            android:textSize="18dp"
-            />
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/rounded_edittextgrey"
-            android:layout_marginTop="10dp"
-            >
-            <Spinner
-                android:id="@+id/spinner"
-                android:drawSelectorOnTop="true"
-                android:layout_width="match_parent"
-                android:background="@null"
-                android:layout_height="wrap_content"
-                android:textColor="#0000FF"
-                android:padding="10dp"
-                />
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:src="@drawable/downarw"
-                android:layout_marginRight="10dp"
-                android:layout_centerVertical="true"
-                android:layout_alignParentRight="true"/>
-        </RelativeLayout>
+
+
+
+
         <TextView
             android:id="@+id/dob"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Date of Birth"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="18dp"
             android:layout_toRightOf="@+id/chk1"
             android:textColor="#002148"
             android:textSize="18dp"
@@ -115,11 +94,11 @@
                     android:textColor="#0000FF"
                     android:padding="5dp"
                     />
-                <!--<ImageView-->
-                <!--android:layout_width="20dp"-->
-                <!--android:layout_height="20dp"-->
-                <!--android:src="@drawable/downarw"-->
-                <!--android:layout_gravity="right|center_vertical"/>-->
+                <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/downarw"
+                android:layout_gravity="right|center_vertical"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="0dp"
@@ -176,36 +155,89 @@
                     android:layout_gravity="right|center_vertical"/>
             </LinearLayout>
         </LinearLayout>
-
         <TextView
-            android:id="@+id/securityno"
+            android:id="@+id/visit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Social Security Number"
+            android:text="Are you the parent or legal guardian of this patient?"
             android:layout_marginTop="10dp"
             android:layout_toRightOf="@+id/chk1"
             android:textColor="#002148"
-            android:textSize="18dp"
+            android:textSize="13dp"
             />
-
-        <EditText
-            android:id="@+id/securtyno"
-            android:layout_width="fill_parent"
+        <RadioGroup
+            android:id="@+id/radioSex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <RadioButton
+                android:id="@+id/newpatient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:layout_marginTop="8dp"
+                android:textColor="#002148"
+                android:textSize="14dp"
+                android:buttonTint="#002148"                />
+            <RadioButton
+                android:id="@+id/seendoctor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:layout_marginTop="8dp"
+                android:textColor="#002148"
+                android:textSize="14dp"
+                android:buttonTint="#002148"
+                />
+        </RadioGroup>
+        <TextView
+            android:id="@+id/sex"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="123456789"
-            android:inputType="number"
-            android:background="@drawable/rounded_edittextgrey"
-            android:padding="15dp"
-            android:layout_marginTop="10dp"/>
+            android:text="Sex"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/chk1"
+            android:textColor="#002148"
+            android:textSize="13dp"
+            />
+        <RadioGroup
+            android:id="@+id/radioSex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:layout_marginTop="8dp"
+                android:textColor="#002148"
+                android:textSize="14dp"
+                android:buttonTint="#002148"                />
+            <RadioButton
+                android:id="@+id/feml"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:layout_marginTop="8dp"
+                android:textColor="#002148"
+                android:textSize="14dp"
+                android:buttonTint="#002148"
+                />
+        </RadioGroup>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="25dp"/>
+
         <Button
-            android:id="@+id/save"
+            android:id="@+id/continuebtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/bottom_selector_secondary"
-            android:text="Save and Continue"
+            android:text="Continue"
             android:textAllCaps="false"
             android:textColor="#ffffff"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:layout_marginBottom="15dp"/>
     </LinearLayout>
 </ScrollView>

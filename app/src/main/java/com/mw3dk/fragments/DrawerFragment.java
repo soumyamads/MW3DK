@@ -16,6 +16,7 @@ import android.widget.TextView;
 
 import com.mw3dk.R;
 import com.mw3dk.activity.BookappointmentActivity;
+import com.mw3dk.activity.JoinNowActivity;
 import com.mw3dk.activity.MedicalTeam;
 import com.mw3dk.activity.SearchResultActivity;
 import com.mw3dk.activity.SignInActivity;
@@ -124,7 +125,7 @@ public class DrawerFragment extends Fragment implements View.OnClickListener{
             case R.id.relative_joinnw:
             case R.id.joinimg:
             case R.id.jointxt:
-                Intent i5=new Intent(getActivity(), Upcoming_Activity.class);
+                Intent i5=new Intent(getActivity(), JoinNowActivity.class);
                 startActivity(i5);
                 getActivity().finish();
 

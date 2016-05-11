@@ -91,10 +91,11 @@
                 <CheckBox
                     android:id="@+id/chk1"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:text="Keep me signed in"/>
                 <TextView
                     android:id="@+id/text2"
-
+android:visibility="gone"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Keep me signed in"

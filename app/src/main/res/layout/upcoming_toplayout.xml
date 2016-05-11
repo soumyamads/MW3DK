@@ -65,7 +65,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="I'm paying by myself"
-                    android:layout_marginTop="6dp"
+                    android:layout_marginTop="5dp"
                     android:layout_toRightOf="@+id/chk1"
                     android:textColor="#75839b"
                     android:textSize="18dp"

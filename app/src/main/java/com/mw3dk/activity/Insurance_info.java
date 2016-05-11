@@ -65,7 +65,7 @@ public class Insurance_info extends AppCompatActivity implements View.OnClickLis
         switch (v.getId()) {
             case R.id.insurance_save:
 
-                Intent i = new Intent(Insurance_info.this, HomeActivity.class);
+                Intent i = new Intent(Insurance_info.this, Dental_Insurance_info.class);
                 startActivity(i);
                 finish();
                 break;

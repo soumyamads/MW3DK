@@ -57,9 +57,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Book an appointment,"
-                    android:textColor="#75839b"
+                    android:textColor="#002148"
                     android:layout_gravity="center"
-                    android:textSize="18dp"
+                    android:textSize="19dp"
                     />
 
 
@@ -69,12 +69,14 @@
                     android:layout_margin="6dp"
                     >
                     <ImageView
+                        android:id="@+id/leftar"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:src="@drawable/leftarw"
+                        android:src="@drawable/rightarw"
                         android:layout_marginLeft="20dp"/>
 
                     <TextView
+                        android:id="@+id/date"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Today, 3 May 2016"
@@ -84,6 +86,7 @@
                         android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
                         />
                     <ImageView
+                        android:id="@+id/rightarw"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:src="@drawable/bluerightarw"

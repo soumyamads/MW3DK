@@ -56,7 +56,8 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Mark Jacob(Me)"/>
+                    android:text="Mark Jacob(Me)"
+                    android:textColor="#75839b"/>
 
                 <TextView
                     android:id="@+id/addnewpatient"
@@ -67,7 +68,13 @@
                     android:textColor="#6b70ce"
                     android:textSize="16dp"
                     android:layout_marginTop="40dp"/>
+                <include layout="@layout/content_addnewpatient"
+                    android:id="@+id/addnewpatientlayout"
+                    android:visibility="gone"
+
+                    />
                 <View
+                    android:id="@+id/view"
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:background="@android:color/darker_gray"

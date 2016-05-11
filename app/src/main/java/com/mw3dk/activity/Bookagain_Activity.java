@@ -1,57 +1,49 @@
 package com.mw3dk.activity;
 
 import android.content.res.Configuration;
-import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.TextView;
 
 import com.mw3dk.R;
+import com.mw3dk.adapter.BookagainAdapter;
+import com.mw3dk.adapter.DoctorProfileAdapter;
 import com.mw3dk.extras.Constants;
 import com.mw3dk.fragments.DrawerFragment;
-import com.mw3dk.fragments.AppointmentFragment;
-import com.mw3dk.fragments.PatientInformationFragment;
 
 import butterknife.ButterKnife;
-import butterknife.InjectView;
-import butterknife.OnClick;
-import butterknife.Optional;
 
 /**
- * Created by snyxius on 4/5/16.
+ * Created by snyxius on 5/5/16.
  */
-public class BookappointmentActivity extends AppCompatActivity implements View.OnClickListener {
+public class Bookagain_Activity extends AppCompatActivity implements View.OnClickListener{
     Toolbar toolbar;
     DrawerLayout drawerLayout;
     ActionBarDrawerToggle drawerToggle;
+    private RecyclerView mRecyclerView;
+
+    private BookagainAdapter mAdapter;
+    private RecyclerView.LayoutManager mLayoutManager;
+    private String[] mDataset = {"29 degrees", "Seahawks 24 - 27 Bengals",
+            "Half Life 3 announced"};
+//    private int mDatasetTypes[] = {WEATHER, SCORE, NEWS, NEWS}; //view types
 
     //    @Optional
 //    @InjectView(R.id.toolbar_title)
 //    TextView signintxt ;
-    @Optional
-    @InjectView(R.id.text1)
-    TextView text1;
-    @Optional
-    @InjectView(R.id.text2)
-    TextView text2;
 
-
-
-//    public void continue_click() {
-//        Intent i = new Intent(MedicalTeam.this, MedicalTeamResultActivity.class);
-//        startActivity(i);
-//    }
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.bookappointmentlayout);
+        setContentView(R.layout.doctorprofile_main);
         ButterKnife.inject(this);
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -62,22 +54,32 @@ public class BookappointmentActivity extends AppCompatActivity implements View.O
                 .commit();
         initDrawer();
         initialise();
-
-
-        getSupportFragmentManager().beginTransaction()
-                .add(R.id.container_book,new PatientInformationFragment(),Constants.APPOINTMENT)
-                .commit();
     }
 
-    private void initialise() {
-        Typeface face = Typeface.createFromAsset(getAssets(), "fonts/AvenirNextLTPro-Regular.otf");
-//        text1.setTypeface(face);
-//        text2.setTypeface(face);
+    private void initialise(){
+//        Typeface face= Typeface.createFromAsset(getAssets(), "fonts/AvenirNextLTPro-Regular.otf");
+//        speciality.setTypeface(face);
+//        insurance.setTypeface(face);
+//        aig.setTypeface(face);
+//        location.setTypeface(face);
+//        street.setTypeface(face);
+//        physician.setTypeface(face);
+
+
+
+        mRecyclerView = (RecyclerView) findViewById(R.id.rvList);
+        mLayoutManager = new LinearLayoutManager(this);
+        mRecyclerView.setLayoutManager(mLayoutManager);
+//Adapter is created in the last step
+
+        mAdapter = new BookagainAdapter(Bookagain_Activity.this,mDataset);
+        mRecyclerView.setAdapter(mAdapter);
+
+
 
     }
-
     private void initDrawer() {
-        drawerLayout = (DrawerLayout) findViewById(R.id.drawerlayout);
+        drawerLayout=(DrawerLayout)findViewById(R.id.drawerlayout);
         drawerToggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.drawer_open, R.string.drawer_close) {
 
             @Override
@@ -91,10 +93,7 @@ public class BookappointmentActivity extends AppCompatActivity implements View.O
             }
         };
         drawerLayout.setDrawerListener(drawerToggle);
-
-
     }
-
     @Override
     protected void onPostCreate(Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);
@@ -106,7 +105,6 @@ public class BookappointmentActivity extends AppCompatActivity implements View.O
         super.onConfigurationChanged(newConfig);
         drawerToggle.onConfigurationChanged(newConfig);
     }
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();

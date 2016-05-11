@@ -142,7 +142,6 @@
             android:layout_height="wrap_content"
             android:text="Responsible Party's Home Phone"
             android:layout_marginTop="12dp"
-            android:layout_marginLeft="15dp"
             android:layout_toRightOf="@+id/chk1"
             android:textColor="#002148"
             android:textSize="18dp"
@@ -165,7 +164,6 @@
             android:layout_height="wrap_content"
             android:text="Responsible Party's Work Phone"
             android:layout_marginTop="12dp"
-            android:layout_marginLeft="15dp"
             android:layout_toRightOf="@+id/chk1"
             android:textColor="#002148"
             android:textSize="18dp"
@@ -186,7 +184,6 @@
             android:layout_height="wrap_content"
             android:text="Responsible Party's Mobile Phone"
             android:layout_marginTop="12dp"
-            android:layout_marginLeft="15dp"
             android:layout_toRightOf="@+id/chk1"
             android:textColor="#002148"
             android:textSize="18dp"
@@ -207,7 +204,6 @@
             android:layout_height="wrap_content"
             android:text="Date of Birth"
             android:layout_marginTop="12dp"
-            android:layout_marginLeft="15dp"
             android:layout_toRightOf="@+id/chk1"
             android:textColor="#002148"
             android:textSize="18dp"
@@ -304,8 +300,6 @@
             android:textAllCaps="false"
             android:textColor="#ffffff"
             android:layout_marginTop="10dp"
-            android:layout_marginLeft="12dp"
-            android:layout_marginBottom="15dp"
-            android:layout_marginRight="12dp"/>
+            android:layout_marginBottom="15dp"/>
     </LinearLayout>
 </ScrollView>
