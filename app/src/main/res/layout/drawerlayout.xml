@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#f2f2f2">
     <ScrollView
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -10,11 +11,12 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="12dp">
+        android:orientation="vertical">
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:layout_margin="10dp"
     >
     <ImageView
         android:id="@+id/search"
@@ -36,17 +38,26 @@
 
         />
 </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f2f2f2">
         <TextView
             android:id="@+id/account"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="My account"
             android:textColor="#002148"
-            android:layout_toRightOf="@+id/search"
             android:layout_centerVertical="true"
             android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
             android:textSize="19dp"
-            />
+            /></RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white">
         <RelativeLayout
             android:id="@+id/relative_signin"
             android:layout_width="match_parent"
@@ -58,6 +69,8 @@
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:src="@drawable/path"
+                android:layout_marginLeft="15dp"
+
                 />
 
             <TextView
@@ -69,7 +82,7 @@
                 android:layout_toRightOf="@+id/signinimg"
                 android:layout_centerVertical="true"
                 android:textSize="17dp"
-                android:layout_marginLeft="30dp"
+                android:layout_marginLeft="20dp"
 
                 />
         </RelativeLayout>
@@ -84,6 +97,8 @@
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:src="@drawable/join_ic"
+                android:layout_marginLeft="15dp"
+
                 />
 
             <TextView
@@ -95,7 +110,7 @@
                 android:layout_toRightOf="@+id/joinimg"
                 android:layout_centerVertical="true"
                 android:textSize="17dp"
-                android:layout_marginLeft="30dp"
+                android:layout_marginLeft="20dp"
 
                 />
         </RelativeLayout>
@@ -110,6 +125,8 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:src="@drawable/medical_team_ic"
+                android:layout_marginLeft="15dp"
+
                 />
 
             <TextView
@@ -120,7 +137,7 @@
                 android:layout_toRightOf="@+id/medicltmimg"
                 android:layout_centerVertical="true"
                 android:textSize="17dp"
-                android:layout_marginLeft="30dp"
+                android:layout_marginLeft="20dp"
 
                 />
         </RelativeLayout>
@@ -135,6 +152,8 @@
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:src="@drawable/well_guideic"
+                android:layout_marginLeft="15dp"
+
                 />
 
             <TextView
@@ -145,7 +164,7 @@
                 android:layout_toRightOf="@+id/welguidimg"
                 android:layout_centerVertical="true"
                 android:textSize="17dp"
-                android:layout_marginLeft="30dp"
+                android:layout_marginLeft="20dp"
 
                 />
         </RelativeLayout>
@@ -160,6 +179,8 @@
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:src="@drawable/post_appointments_ic"
+                android:layout_marginLeft="15dp"
+
                 />
 
             <TextView
@@ -170,7 +191,7 @@
                 android:layout_toRightOf="@+id/pastapntimg"
                 android:layout_centerVertical="true"
                 android:textSize="17dp"
-                android:layout_marginLeft="30dp"
+                android:layout_marginLeft="20dp"
 
                 />
         </RelativeLayout>
@@ -181,10 +202,12 @@
             android:layout_marginTop="20dp"
             >
             <ImageView
-                android:id="@+id/settings"
+                android:id="@+id/settingimg"
                 android:layout_width="28dp"
                 android:layout_height="28dp"
                 android:src="@drawable/settings_ic"
+                android:layout_marginLeft="15dp"
+
                 />
 
             <TextView
@@ -192,13 +215,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Settings"
-                android:layout_toRightOf="@+id/settings"
+                android:layout_toRightOf="@+id/settingimg"
                 android:layout_centerVertical="true"
                 android:textSize="17dp"
-                android:layout_marginLeft="30dp"
+                android:layout_marginLeft="20dp"
 
                 />
         </RelativeLayout>
+        </LinearLayout>
         <TextView
             android:id="@+id/cntctus"
             android:layout_width="wrap_content"
@@ -209,6 +233,7 @@
             android:layout_centerVertical="true"
             android:layout_marginTop="20dp"
             android:textSize="19dp"
+            android:layout_marginLeft="15dp"
             />
         <TextView
             android:id="@+id/termsuse"
@@ -219,6 +244,7 @@
             android:layout_toRightOf="@+id/search"
             android:layout_centerVertical="true"
             android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
             android:textSize="19dp"
             />
     </LinearLayout>

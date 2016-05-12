@@ -206,6 +206,6 @@ mcontext=context;    }
 //            return BOTTOM_LAYOUT;
 //
 //        }
-        return 1;
+        return 3;
     }
 }

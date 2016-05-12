@@ -92,7 +92,7 @@ public class Dental_Insurance_info extends AppCompatActivity implements View.OnC
                 Intent i=new Intent(Dental_Insurance_info.this,HomeActivity.class);
                 startActivity(i);
                 finish();
-break;
+                break;
             case R.id.close:
             case R.id.backicon:
 

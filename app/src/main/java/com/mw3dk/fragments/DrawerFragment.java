@@ -19,6 +19,7 @@ import com.mw3dk.activity.BookappointmentActivity;
 import com.mw3dk.activity.JoinNowActivity;
 import com.mw3dk.activity.MedicalTeam;
 import com.mw3dk.activity.SearchResultActivity;
+import com.mw3dk.activity.SettingsActivity;
 import com.mw3dk.activity.SignInActivity;
 import com.mw3dk.activity.Upcoming_Activity;
 import com.mw3dk.activity.WellguideActivity;
@@ -84,7 +85,9 @@ public class DrawerFragment extends Fragment implements View.OnClickListener{
         view.findViewById(R.id.relative_joinnw).setOnClickListener(this);
         view.findViewById(R.id.joinimg).setOnClickListener(this);
         view.findViewById(R.id.jointxt).setOnClickListener(this);
-
+        view.findViewById(R.id.rltvsettings).setOnClickListener(this);
+        view.findViewById(R.id.settingimg).setOnClickListener(this);
+        view.findViewById(R.id.settingstxt).setOnClickListener(this);
 
     }
 
@@ -127,6 +130,14 @@ public class DrawerFragment extends Fragment implements View.OnClickListener{
             case R.id.jointxt:
                 Intent i5=new Intent(getActivity(), JoinNowActivity.class);
                 startActivity(i5);
+                getActivity().finish();
+
+                break;
+            case R.id.rltvsettings:
+            case R.id.settingimg:
+            case R.id.settingstxt:
+                Intent i6=new Intent(getActivity(), SettingsActivity.class);
+                startActivity(i6);
                 getActivity().finish();
 
                 break;

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/white">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Demographic Info(Optional)"
+                android:layout_toRightOf="@+id/chk1"
+                android:textColor="#002148"
+
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#979797"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/emailstxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Race Select one or more"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="15dp"
+                android:layout_toRightOf="@+id/chk1"
+                android:textColor="#002148"
+
+                />
+           <CheckBox
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:checked="false"
+               android:layout_marginLeft="10dp"
+               android:text="American Indian or Alaska Native"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:layout_marginLeft="10dp"
+                android:text="Asian"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:layout_marginLeft="10dp"
+                android:text="Black or African American"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:layout_marginLeft="10dp"
+                android:text="Native Hawailian"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:layout_marginLeft="10dp"
+                android:text="Other Pacific Islander"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:layout_marginLeft="10dp"
+                android:text="White"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:layout_marginLeft="10dp"
+                android:text="Decline to Answer"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:layout_marginLeft="10dp"
+                android:text="Other"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#979797"
+                android:layout_marginTop="15dp"
+                />
+
+            <TextView
+                android:id="@+id/txtmsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ethnicity"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="15dp"
+                android:layout_toRightOf="@+id/chk1"
+                android:textColor="#002148"
+
+                />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:layout_marginLeft="10dp"
+                android:text="Hispanic or Latino"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:layout_marginLeft="10dp"
+                android:text="Not Hispanic or Latino"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:layout_marginLeft="10dp"
+                android:text="Decline to Answer"/>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#979797"
+                android:layout_marginTop="15dp"
+                />
+            <TextView
+                android:id="@+id/appstng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Preffered Language"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="15dp"
+                android:layout_toRightOf="@+id/chk1"
+                android:textColor="#002148"
+
+                />
+            <TextView
+                android:id="@+id/txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MW3DK is currently available in English and Espanol."
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="15dp"
+                android:layout_toRightOf="@+id/chk1"
+                android:textColor="#002148"
+
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittextgrey"
+                android:layout_marginTop="10dp"
+                >
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:drawSelectorOnTop="true"
+                    android:layout_width="match_parent"
+                    android:background="@null"
+                    android:layout_height="wrap_content"
+                    android:textColor="#0000FF"
+                    android:padding="10dp"
+                    />
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/downarw"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#979797"
+                android:layout_marginTop="15dp"
+                />
+            <TextView
+                android:id="@+id/choosepswd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zip (Optional)"
+                android:layout_marginTop="10dp"
+                android:textSize="15dp"
+                android:layout_toRightOf="@+id/chk1"
+                android:textColor="#002148"
+
+                />
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="avenir-Roman"
+                android:inputType="textPassword"
+                android:padding="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_edittextgrey"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#979797"
+                android:layout_marginTop="15dp"
+                />
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bottom_selector_secondary"
+                android:layout_marginTop="20dp"
+                android:textColor="@android:color/white"
+                android:text="Save"
+                android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                android:layout_marginTop="20dp"
+                android:textColor="#002148"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                />
+            </LinearLayout>
+    </ScrollView>

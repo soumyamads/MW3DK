@@ -43,6 +43,7 @@
         <activity android:name=".activity.Insurance_info"/>
         <activity android:name=".activity.Dental_Insurance_info"/>
         <activity android:name=".activity.Bookagain_Activity"/>
+        <activity android:name=".activity.SettingsActivity"/>
 
 
 
