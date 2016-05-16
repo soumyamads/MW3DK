@@ -24,7 +24,7 @@ import java.util.Calendar;
 /**
  * Created by snyxius on 5/5/16.
  */
-public class BookagainAdapter extends RecyclerView.Adapter<BookagainAdapter.ViewHolder> {
+public class BookagainAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private static final String TAG = "CustomAdapter";
 
     private String[] mDataSet;
@@ -95,7 +95,7 @@ Context mcontext;
 mcontext=context;    }
 
     @Override
-    public ViewHolder onCreateViewHolder(ViewGroup viewGroup, int viewType) {
+    public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup viewGroup, int viewType) {
         View v;
         if (viewType == DOCTOR_PROF_HEADER) {
             v = LayoutInflater.from(viewGroup.getContext())
@@ -107,16 +107,17 @@ mcontext=context;    }
                     .inflate(R.layout.map, viewGroup, false);
             return new NewsViewHolder(v);
         }
-        return null;
-//        else {
-//            v = LayoutInflater.from(viewGroup.getContext())
-//                    .inflate(R.layout.viewpager, viewGroup, false);
-//            return new ScoreViewHolder(v);
-//        }
+//        return null;
+        else {
+            v = LayoutInflater.from(viewGroup.getContext())
+                    .inflate(R.layout.viewpager, viewGroup, false);
+            v.setVisibility(View.GONE);
+            return new ScoreViewHolder(v);
+        }
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder viewHolder, final int position) {
+    public void onBindViewHolder(RecyclerView.ViewHolder viewHolder, final int position) {
         if (viewHolder.getItemViewType() == DOCTOR_PROF_HEADER) {
             final WeatherViewHolder holder = (WeatherViewHolder) viewHolder;
             holder.nextavailability.setOnClickListener(new View.OnClickListener() {
@@ -190,7 +191,8 @@ mcontext=context;    }
 
     @Override
     public int getItemCount() {
-        return mDataSet.length;
+//        return mDataSet.length;
+        return 2;
     }
 
     @Override
@@ -206,6 +208,6 @@ mcontext=context;    }
 //            return BOTTOM_LAYOUT;
 //
 //        }
-        return 3;
+        return 2;
     }
 }

@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="#f2f2f2">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp">
+        android:background="@android:color/white"
+        android:layout_marginTop="10dp">
         <LinearLayout
             android:id="@+id/line1"
             android:layout_width="match_parent"
@@ -87,20 +89,20 @@
             android:layout_height="1dp"
             android:background="@android:color/darker_gray"
             android:layout_below="@+id/line1"
-            android:layout_marginBottom="10dp"
             android:layout_marginTop="5dp"/>
         <RelativeLayout
             android:id="@+id/reltv1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/line1"
+            android:layout_marginTop="15dp"
+
             >
             <TextView
                 android:id="@+id/appointment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Appointments(1)"
-                android:layout_marginTop="8dp"
                 android:layout_toRightOf="@+id/chk1"
                 android:layout_marginLeft="20dp"
                 android:textColor="#75839b"
@@ -113,7 +115,6 @@
                 android:layout_height="20dp"
                 android:src="@drawable/bluerightarw"
                 android:layout_alignParentRight="true"
-                android:layout_marginTop="8dp"
                 android:layout_marginRight="10dp"/>
         </RelativeLayout>
         <View
@@ -121,7 +122,7 @@
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_below="@+id/reltv1"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="15dp"
             android:background="@android:color/darker_gray"/>
         <Button
             android:id="@+id/bookagainbtn"

@@ -37,7 +37,10 @@ public class SettingsActivity extends AppCompatActivity implements View.OnClickL
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-
+            case R.id.backicon:
+                Intent i=new Intent(SettingsActivity.this,HomeActivity.class);
+                startActivity(i);
+                finish();
         }
     }
 }

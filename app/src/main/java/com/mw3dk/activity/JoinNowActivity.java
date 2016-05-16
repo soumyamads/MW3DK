@@ -59,8 +59,12 @@ public class JoinNowActivity extends AppCompatActivity implements View.OnClickLi
         startActivity(i);
         finish();
     }
-
-
+    @Optional @OnClick(R.id.backicon)
+    public void back_click(){
+        Intent i3=new Intent(JoinNowActivity.this,HomeActivity.class);
+        startActivity(i3);
+        finish();
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

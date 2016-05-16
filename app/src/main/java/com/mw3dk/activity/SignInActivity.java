@@ -30,7 +30,7 @@ public class SignInActivity extends AppCompatActivity implements View.OnClickLis
     ActionBarDrawerToggle drawerToggle;
     @Optional @InjectView(R.id.toolbar_title) TextView signintxt ;
     @Optional @InjectView(R.id.fgtpaswd) TextView fgtpswdtxt ;
-    @Optional @InjectView(R.id.text2) TextView kpsgntext ;
+//    @Optional @InjectView(R.id.text2) TextView kpsgntext ;
 //    @Optional @InjectView(R.id.text1) TextView text1 ;
     @Optional @InjectView(R.id.text4) TextView text4 ;
     @Optional @InjectView(R.id.text3) TextView text3 ;
@@ -72,7 +72,7 @@ public class SignInActivity extends AppCompatActivity implements View.OnClickLis
         Typeface face= Typeface.createFromAsset(getAssets(), "fonts/AvenirNextLTPro-Regular.otf");
         fgtpswdtxt.setTypeface(face);
         signintxt.setTypeface(face);
-        kpsgntext.setTypeface(face);
+//        kpsgntext.setTypeface(face);
 //        text1.setTypeface(face);
         text3.setTypeface(face);
         text4.setTypeface(face);

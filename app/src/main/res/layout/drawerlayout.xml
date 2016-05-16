@@ -16,13 +16,14 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@android:color/white"
-    android:layout_margin="10dp"
     >
     <ImageView
         android:id="@+id/search"
         android:layout_width="28dp"
         android:layout_height="28dp"
         android:src="@drawable/magnifier_ic"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
         />
 
     <TextView

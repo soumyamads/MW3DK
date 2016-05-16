@@ -109,7 +109,7 @@
                 <Spinner
                     android:id="@+id/date"
                     android:drawSelectorOnTop="true"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:background="@null"
                     android:layout_height="wrap_content"
                     android:textColor="#0000FF"
@@ -134,7 +134,7 @@
                 <Spinner
                     android:id="@+id/month"
                     android:drawSelectorOnTop="true"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:background="@null"
                     android:layout_height="wrap_content"
                     android:textColor="#0000FF"
@@ -161,7 +161,7 @@
                 <Spinner
                     android:id="@+id/year"
                     android:drawSelectorOnTop="true"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:background="@null"
                     android:layout_height="wrap_content"
                     android:textColor="#0000FF"

@@ -1,5 +1,6 @@
 package com.mw3dk.fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -7,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.mw3dk.R;
+import com.mw3dk.activity.HomeActivity;
 
 import butterknife.ButterKnife;
 
@@ -45,33 +47,34 @@ public class ProfileFragment extends Fragment implements View.OnClickListener{
 
     @Override
     public void onClick(View v) {
-       /* switch (v.getId()) {
-            case R.id.continue_button:
-                validate();
-//               sendBasicData();
-                break;
-            case R.id.select_business_layout:
-                passData.setBusinessData(business_text.getText().toString());
-                break;
+       switch (v.getId()) {
+            /*case R.id.backicon:
+                Intent intent=new Intent(getActivity(), HomeActivity.class);
+                getActivity().startActivity(intent);
+                getActivity().finish();
+                break;*/
+//            case R.id.select_business_layout:
+//                passData.setBusinessData(business_text.getText().toString());
+//                break;
+//
+//            case R.id.quickimage:
+//
+//                DialogFragment dialogFrag = QuickDescriptionDialogFragment.newInstance();
+//                dialogFrag.setCancelable(false);
+//                dialogFrag.show(getFragmentManager().beginTransaction(), Constants.SUCCESSDIALOG_FRAGMENT);
+//                break;
+//            case R.id.template:
+//            case R.id.templates:
+//
+//
+//                FragmentManager manager = getFragmentManager();
+//
+//                TempFragment dialog = new TempFragment();
+//                dialog.show(manager, "stepOne");
+//
+//                break;
 
-            case R.id.quickimage:
-
-                DialogFragment dialogFrag = QuickDescriptionDialogFragment.newInstance();
-                dialogFrag.setCancelable(false);
-                dialogFrag.show(getFragmentManager().beginTransaction(), Constants.SUCCESSDIALOG_FRAGMENT);
-                break;
-            case R.id.template:
-            case R.id.templates:
-
-
-                FragmentManager manager = getFragmentManager();
-
-                TempFragment dialog = new TempFragment();
-                dialog.show(manager, "stepOne");
-
-                break;
-
-        }*/
+        }
     }
 
 }
